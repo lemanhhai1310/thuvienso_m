@@ -135,16 +135,26 @@
 </head>
 <body class="uk-background-muted">
 <!--app-->
-<div id="app" style="padding-bottom: 80px" class="uk-background-default width-1024px uk-box-shadow-small uk-margin-auto uk-height-viewport uk-offcanvas-content uk-overflow-hidden uk-position-relative">
-    <nav class="uk-navbar-container" uk-sticky>
+<div id="app" class="app uk-background-default width-1024px uk-box-shadow-small uk-margin-auto uk-height-viewport uk-offcanvas-content uk-overflow-hidden uk-position-relative">
+    <?php if (isset($isHeader) && $isHeader): ?>
+    <nav class="header__navbar uk-navbar-container" uk-sticky="end: !.app; offset: 0; show-on-up: true; animation: uk-animation-slide-top">
         <div class="uk-container">
             <div uk-navbar>
                 <div class="uk-navbar-left">
                     <a class="uk-navbar-item uk-logo" href="#" aria-label="Back to Home"><img src="images/Logo.png" alt=""></a>
                 </div>
-                <div class="uk-navbar-right">
-
+                <div class="uk-navbar-right gap-0">
+                    <a href="" class="uk-navbar-item">
+                        <span class="header__navbar__icon header__navbar__icon--filter"></span>
+                    </a>
+                    <a href="" class="uk-navbar-item">
+                        <span class="header__navbar__icon header__navbar__icon--search"></span>
+                    </a>
+                    <a href="" class="uk-navbar-item">
+                        <span class="header__navbar__icon header__navbar__icon--cart" data-count="23"></span>
+                    </a>
                 </div>
             </div>
         </div>
     </nav>
+    <?php endif; ?>

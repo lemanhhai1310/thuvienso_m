@@ -1,0 +1,8 @@
+$sizes:(
+        '0': 0px,
+);
+@each $name,$value in $sizes {
+  .gap-#{$name} {
+    gap: $value;
+  }
+}

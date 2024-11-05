@@ -5,13 +5,24 @@
 
     /* App Footer */
     box-shadow: 10px -10px var(--Number-20, 20px) 0px rgba(14, 15, 38, 0.05);
+    & ~ .uk-sticky-placeholder{
+      display: none;
+    }
+    &:not(.uk-active){
+      //display: none;
+      //visibility: hidden;
+      //height: 0;
+      //opacity: 0;
+    }
   }
   &__nav{
+    gap: 0;
     &__li{
 
     }
     &__a{
       text-transform: inherit !important;
+      @extend .mh-60;
     }
     &__subtitle{
       @extend .fz-11px;

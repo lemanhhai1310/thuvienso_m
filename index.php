@@ -1,6 +1,7 @@
 <?php $data["title"] = "Home"; ?>
 <?php $bodyClass = '' ?>
 <?php $isNav = true ?>
+<?php $isHeader = true ?>
 <?php require "template-parts/layouts/header.php"; ?>
     <div class="uk-container item-24px">
         <div class="home__slider__box uk-text-center rounded-20px">

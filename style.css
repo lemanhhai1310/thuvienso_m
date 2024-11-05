@@ -28,7 +28,7 @@
   font-style: normal;
 }
 
-.be-vietnam-pro-600 {
+.be-vietnam-pro-600, .header__navbar__icon--cart[data-count]:before {
   font-family: "Be Vietnam Pro", sans-serif;
   font-weight: 600;
   font-style: normal;
@@ -290,6 +290,10 @@
   margin-top: 28px;
 }
 
+.fz-10px, .header__navbar__icon--cart[data-count]:before {
+  font-size: 10px;
+}
+
 .fz-11px, .footer__nav__subtitle {
   font-size: 11px;
 }
@@ -365,7 +369,7 @@
   color: black;
 }
 
-.text-FFF {
+.text-FFF, .header__navbar__icon--cart[data-count]:before {
   color: white;
 }
 
@@ -539,11 +543,73 @@
   background: #FBF1E6;
 }
 
+.bg-FFF, .header__navbar:not(.uk-navbar-transparent) {
+  background: #FFF;
+}
+
+.bg-F65D4E, .header__navbar__icon--cart[data-count]:before {
+  background: #F65D4E;
+}
+
+.mh-60, .footer__nav__a, .header__navbar .uk-navbar-nav > li > a, .header__navbar .uk-navbar-item, .header__navbar .uk-navbar-toggle {
+  min-height: 60px !important;
+}
+
+.gap-0 {
+  gap: 0px;
+}
+
+.header__navbar {
+  border-bottom: 1px solid #E6E6E6;
+}
+.header__navbar__icon {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.header__navbar__icon--filter {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Cpath d='M15.6824 1.66699H4.31764C2.86834 1.66699 2.00388 3.26328 2.80781 4.45502L7.57589 10.6899C7.97333 11.279 8.18541 11.9713 8.18541 12.6793V17.4352C8.18541 18.234 9.16269 18.6341 9.73426 18.0692L11.5489 16.2759C11.719 16.1078 11.8146 15.8797 11.8146 15.6419V12.6793C11.8146 11.9713 12.0267 11.279 12.4241 10.6899L17.1922 4.45502C17.9961 3.26328 17.1317 1.66699 15.6824 1.66699Z' stroke='black' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+.header__navbar__icon--search {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Cg clip-path='url(%23clip0_8537_15585)'%3E%3Cpath d='M15.417 15.417L18.3337 18.3337M17.5003 9.58366C17.5003 5.2114 13.9559 1.66699 9.58366 1.66699C5.2114 1.66699 1.66699 5.2114 1.66699 9.58366C1.66699 13.9559 5.2114 17.5003 9.58366 17.5003C13.9559 17.5003 17.5003 13.9559 17.5003 9.58366Z' stroke='black' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_8537_15585'%3E%3Crect width='20' height='20' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+}
+.header__navbar__icon--arrow-left {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M5.46967 11.4697C5.17678 11.7626 5.17678 12.2374 5.46967 12.5303L9.46967 16.5303C9.76256 16.8232 10.2374 16.8232 10.5303 16.5303C10.8232 16.2374 10.8232 15.7626 10.5303 15.4697L7.81066 12.75L18 12.75C18.4142 12.75 18.75 12.4142 18.75 12C18.75 11.5858 18.4142 11.25 18 11.25L7.81066 11.25L10.5303 8.53033C10.8232 8.23744 10.8232 7.76256 10.5303 7.46967C10.2374 7.17678 9.76256 7.17678 9.46967 7.46967L5.46967 11.4697Z' fill='%2328303F'/%3E%3C/svg%3E");
+}
+.header__navbar__icon--cart {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Cpath d='M7.5 5L7.5 5.83333C7.5 7.21404 8.61929 8.33333 10 8.33333C11.3807 8.33333 12.5 7.21405 12.5 5.83333V5' stroke='black' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M13.0098 2.5H6.99063C5.36116 2.5 3.97053 3.67804 3.70265 5.28534L2.31376 13.6187C1.97513 15.6504 3.54194 17.5 5.60174 17.5H14.3987C16.4585 17.5 18.0253 15.6504 17.6866 13.6187L16.2978 5.28534C16.0299 3.67804 14.6392 2.5 13.0098 2.5Z' stroke='black' stroke-width='1.5' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+.header__navbar__icon--cart[data-count] {
+  position: relative;
+}
+.header__navbar__icon--cart[data-count]:before {
+  position: absolute;
+  top: calc(-50% + 25px);
+  right: calc(-50% + 25px);
+  content: attr(data-count);
+  height: 20px;
+  min-width: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .footer__navbar {
   border-radius: 24px 24px 0px 0px;
   background: var(--Color-Neutral-White, #FEFEFE);
   /* App Footer */
   box-shadow: 10px -10px var(--Number-20, 20px) 0px rgba(14, 15, 38, 0.05);
+}
+.footer__navbar ~ .uk-sticky-placeholder {
+  display: none;
+}
+.footer__nav {
+  gap: 0;
 }
 .footer__nav__a {
   text-transform: inherit !important;

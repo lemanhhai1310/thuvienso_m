@@ -1,0 +1,8 @@
+$sizes:(
+        '60': 60px,
+);
+@each $name,$value in $sizes {
+  .mh-#{$name} {
+    min-height: $value !important;
+  }
+}
