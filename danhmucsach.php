@@ -28,7 +28,7 @@
                 <h2 class="uk-margin-remove fz-18px text-000 lh-127"><?= $title ?></h2>
             </div>
             <div class="uk-width-auto">
-                <a href="" class="home__linkAll uk-link be-vietnam-pro-600 text-966412 uk-flex-inline uk-flex-middle">
+                <a href="danhmucchitiet.php" class="home__linkAll uk-link be-vietnam-pro-600 text-966412 uk-flex-inline uk-flex-middle">
                     Xem tất cả
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
                         <path d="M8.33301 6.33325L11.6663 10.4999L8.33301 14.6666" stroke="#966412" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -81,7 +81,7 @@
                     </div>
                     <div class="item-8px text-000 lh-125 uk-text-truncate"><?= $v['text'] ?></div>
                     <div class="text-999 lh-125 item-4px">880 đầu sách</div>
-                    <a href="" class="uk-position-cover"></a>
+                    <a href="danhmucchitiet.php" class="uk-position-cover"></a>
                 </div>
             </div>
             <?php endforeach; ?>
@@ -97,7 +97,7 @@
                 <h2 class="uk-margin-remove fz-18px text-000 lh-127"><?= $title ?></h2>
             </div>
             <div class="uk-width-auto">
-                <a href="" class="home__linkAll uk-link be-vietnam-pro-600 text-966412 uk-flex-inline uk-flex-middle">
+                <a href="danhmucchitiet.php" class="home__linkAll uk-link be-vietnam-pro-600 text-966412 uk-flex-inline uk-flex-middle">
                     Xem tất cả
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
                         <path d="M8.33301 6.33325L11.6663 10.4999L8.33301 14.6666" stroke="#966412" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -164,7 +164,7 @@
                         </div>
                         <div class="item-8px text-000 lh-125 uk-text-truncate"><?= $v['text'] ?></div>
                         <div class="text-999 lh-125 item-4px">880 đầu sách</div>
-                        <a href="" class="uk-position-cover"></a>
+                        <a href="danhmucchitiet.php" class="uk-position-cover"></a>
                     </div>
                 </div>
             <?php endforeach; ?>
@@ -180,7 +180,7 @@
                 <h2 class="uk-margin-remove fz-18px text-000 lh-127"><?= $title ?></h2>
             </div>
             <div class="uk-width-auto">
-                <a href="" class="home__linkAll uk-link be-vietnam-pro-600 text-966412 uk-flex-inline uk-flex-middle">
+                <a href="danhmucchitiet.php" class="home__linkAll uk-link be-vietnam-pro-600 text-966412 uk-flex-inline uk-flex-middle">
                     Xem tất cả
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
                         <path d="M8.33301 6.33325L11.6663 10.4999L8.33301 14.6666" stroke="#966412" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -247,7 +247,7 @@
                         </div>
                         <div class="item-8px text-000 lh-125 uk-text-truncate"><?= $v['text'] ?></div>
                         <div class="text-999 lh-125 item-4px">880 đầu sách</div>
-                        <a href="" class="uk-position-cover"></a>
+                        <a href="danhmucchitiet.php" class="uk-position-cover"></a>
                     </div>
                 </div>
             <?php endforeach; ?>

@@ -22,13 +22,13 @@
   font-style: normal;
 }
 
-.be-vietnam-pro-500, .footer__nav__subtitle {
+.be-vietnam-pro-500, .danhmucchitiet__fillter__sort__btn, .footer__nav__subtitle {
   font-family: "Be Vietnam Pro", sans-serif;
   font-weight: 500;
   font-style: normal;
 }
 
-.be-vietnam-pro-600, .header__navbar__icon--cart[data-count]:before {
+.be-vietnam-pro-600, .danhmucchitiet__search__input, .header__navbar__icon--cart[data-count]:before {
   font-family: "Be Vietnam Pro", sans-serif;
   font-weight: 600;
   font-style: normal;
@@ -298,7 +298,7 @@
   font-size: 11px;
 }
 
-.fz-14px, .home__banner__btn {
+.fz-14px, .danhmucchitiet__fillter__sort__btn, .danhmucchitiet__fillter__chude__label, .danhmucchitiet__search__input, .home__banner__btn {
   font-size: 14px;
 }
 
@@ -377,11 +377,15 @@
   color: #444241;
 }
 
+.text-444, .danhmucchitiet__fillter__chude__label {
+  color: #444444;
+}
+
 .text-999, .home__linkAll:hover {
   color: #999999;
 }
 
-.text-FFF, .header__navbar__icon--cart[data-count]:before {
+.text-FFF, .danhmucchitiet__fillter__dinhdang__checkbox:checked ~ .danhmucchitiet__fillter__dinhdang__label, .header__navbar__icon--cart[data-count]:before {
   color: white;
 }
 
@@ -393,12 +397,24 @@
   color: #ff0441;
 }
 
-.text-966412 {
+.text-966412, .danhmucchitiet__fillter__btn--submit, .danhmucchitiet__fillter__sort__btn > span:nth-child(2) {
   color: #966412;
 }
 
 .text-04C5BA {
   color: #04c5ba;
+}
+
+.text-9A96AA, .danhmucchitiet__search__input::placeholder {
+  color: #9a96aa;
+}
+
+.text-4B5563, .danhmucchitiet__fillter__dinhdang__label {
+  color: #4b5563;
+}
+
+.text-2A2928, .danhmucchitiet__fillter__btn--reset {
+  color: #2a2928;
 }
 
 .item-2px:nth-child(n+2) {
@@ -483,6 +499,14 @@
   width: max-content;
 }
 
+.rounded-2px {
+  border-radius: 2px;
+}
+
+.rounded-4px, .danhmucchitiet__fillter__chude__checkbox {
+  border-radius: 4px;
+}
+
 .rounded-6px {
   border-radius: 6px;
 }
@@ -521,6 +545,10 @@
 
 .lh-128 {
   line-height: 1.2857;
+}
+
+.lh-142 {
+  line-height: 1.42857;
 }
 
 .lh-150 {
@@ -571,6 +599,18 @@
   background: #F65D4E;
 }
 
+.bg-F6F6F6 {
+  background: #F6F6F6;
+}
+
+.bg-F7F7F7, .danhmucchitiet__fillter__dinhdang__label, .danhmucchitiet__fillter__sort__btn {
+  background: #F7F7F7;
+}
+
+.bg-966412, .danhmucchitiet__fillter__dinhdang__checkbox:checked ~ .danhmucchitiet__fillter__dinhdang__label {
+  background: #966412;
+}
+
 .mh-60, .footer__nav__a, .header__navbar .uk-navbar-nav > li > a, .header__navbar .uk-navbar-item, .header__navbar .uk-navbar-toggle {
   min-height: 60px !important;
 }
@@ -581,6 +621,17 @@
 
 .padding-12 {
   padding: 12px;
+}
+
+.divider {
+  height: 1px;
+  background-color: #E6E6E6;
+}
+
+.divider-vertical-20 {
+  background: #E6E6E6;
+  width: 1px;
+  height: 20px;
 }
 
 .header__navbar {
@@ -848,6 +899,82 @@
   .home__gridScroll > *:last-child {
     padding-right: 40px;
   }
+}
+
+.danhmucchitiet__search__input {
+  height: 48px !important;
+  background: #F6F6F6 !important;
+}
+.danhmucchitiet__search__input:not(:focus) {
+  border-color: #F6F6F6 !important;
+}
+.danhmucchitiet__search__input:is(:focus) {
+  border-color: #966412 !important;
+}
+.danhmucchitiet__offcanvas__bar {
+  transition: all 0.3s ease-out;
+  top: 100%;
+  left: 0;
+  right: 0;
+  width: 100%;
+  border-radius: var(--Number-24, 24px) var(--Number-24, 24px) var(--Number-0, 0px) var(--Number-0, 0px);
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+}
+.uk-open > .danhmucchitiet__offcanvas__bar {
+  top: 26vh;
+}
+.danhmucchitiet__fillter__chude__checkbox:is(:checked) {
+  background-color: #2ABD11 !important;
+  border-color: #2ABD11;
+  background-size: 85%;
+}
+.danhmucchitiet__fillter__sort__icon1, .danhmucchitiet__fillter__sort__icon2 {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M3.4421 15.1088L5.10877 13.4421C5.35285 13.198 5.35285 12.8023 5.10877 12.5582C4.86469 12.3141 4.46897 12.3141 4.22489 12.5582L3.62516 13.1579V1.3335C3.62516 0.988318 3.34534 0.708496 3.00016 0.708496C2.65498 0.708496 2.37516 0.988318 2.37516 1.3335V13.1579L1.77544 12.5582C1.53136 12.3141 1.13563 12.3141 0.891554 12.5582C0.647477 12.8023 0.647477 13.198 0.891554 13.4421L2.55822 15.1088C2.8023 15.3528 3.19803 15.3528 3.4421 15.1088ZM8.13906 9.4585L6.91043 12.4072C6.77767 12.7258 6.41175 12.8765 6.09312 12.7438C5.7745 12.611 5.62382 12.2451 5.75658 11.9264L9.92325 1.92644C10.0203 1.69354 10.2479 1.54183 10.5002 1.54183C10.7525 1.54183 10.9801 1.69354 11.0771 1.92644L15.2438 11.9264C15.3765 12.2451 15.2259 12.611 14.9072 12.7438C14.5886 12.8765 14.2227 12.7258 14.0899 12.4072L12.8613 9.4585H8.13906ZM12.3405 8.2085H8.6599L10.5002 3.79183L12.3405 8.2085Z' fill='%234B5563'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.danhmucchitiet__fillter__sort__icon1 svg, .danhmucchitiet__fillter__sort__icon2 svg {
+  opacity: 0;
+}
+.danhmucchitiet__fillter__sort__icon2 {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M9.5579 4.55806C9.80197 4.31398 10.1977 4.31398 10.4418 4.55806L13.7751 7.89139C14.0192 8.13547 14.0192 8.5312 13.7751 8.77528C13.531 9.01935 13.1353 9.01935 12.8912 8.77528L10.6248 6.50888V15C10.6248 15.3452 10.345 15.625 9.99984 15.625C9.65466 15.625 9.37484 15.3452 9.37484 15V6.50888L7.10845 8.77528C6.86437 9.01935 6.46864 9.01935 6.22456 8.77528C5.98048 8.5312 5.98048 8.13547 6.22456 7.89139L9.5579 4.55806Z' fill='%2328303F'/%3E%3C/svg%3E");
+}
+.danhmucchitiet__fillter__sort__icon2 svg {
+  opacity: 0;
+}
+.danhmucchitiet__fillter__sort__btn {
+  padding: 0 12px;
+  text-align: left;
+  text-transform: inherit;
+  position: relative;
+}
+.danhmucchitiet__fillter__sort__btn > span:last-child {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+}
+.danhmucchitiet__fillter__section {
+  border-radius: 28px 28px 0px 0px;
+  background: var(--Color-Neutral-White, #FEFEFE);
+  /* Shadow 1 */
+  box-shadow: 3px -3px 8.1px 0px rgba(0, 0, 0, 0.05), 0px 4px 12px 0px rgba(0, 0, 0, 0.05);
+}
+.danhmucchitiet__fillter__btn {
+  text-transform: inherit;
+  line-height: 44px;
+}
+.danhmucchitiet__fillter__btn--submit {
+  background: var(--brand-color, linear-gradient(284deg, #FFC01F -30.8%, #FFF38C 155.96%));
+}
+.danhmucchitiet__fillter__dinhdang__label {
+  min-height: 38px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 12px;
 }
 
 /*# sourceMappingURL=style.css.map */
