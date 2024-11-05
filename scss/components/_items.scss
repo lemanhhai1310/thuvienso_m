@@ -1,13 +1,16 @@
 $j:(
 2px,
+4px,
 6px,
 7px,
+8px,
 10px,
 12px,
 14px,
 20px,
 24px,
 30px,
+40px,
 );
 @each $i in $j {
   .item-#{$i}{

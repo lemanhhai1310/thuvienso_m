@@ -1,0 +1,8 @@
+$sizes:(
+        '12': 12px
+);
+@each $name,$value in $sizes {
+  .padding-#{$name} {
+    padding: $value;
+  }
+}
