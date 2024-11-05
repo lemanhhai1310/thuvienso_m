@@ -11,6 +11,8 @@ $colors: (
         'F6F6F6': #F6F6F6,
         'F7F7F7': #F7F7F7,
         '966412': #966412,
+        'E5E5E5': #E5E5E5,
+        '0CB0A7': #0CB0A7,
 );
 @each $name,$value in $colors {
   .bg-#{$name} {

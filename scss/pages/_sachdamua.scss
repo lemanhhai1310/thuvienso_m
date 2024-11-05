@@ -1,0 +1,11 @@
+.sachdamua {
+  &__progress{
+    height: 4px;
+    @extend .bg-E5E5E5;
+    &[value]{
+      &::-webkit-progress-value{
+        @extend .bg-0CB0A7;
+      }
+    }
+  }
+}

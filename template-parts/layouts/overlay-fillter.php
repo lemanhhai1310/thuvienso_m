@@ -90,5 +90,5 @@
 
 <script>
     const element = document.querySelector(".danhmucchitiet__offcanvas");
-    UIkit.offcanvas(element).show();
+    // UIkit.offcanvas(element).show();
 </script>
