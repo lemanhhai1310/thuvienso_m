@@ -7,7 +7,7 @@
     <div class="uk-container">
         <div uk-navbar>
             <div class="uk-navbar-left">
-                <a href="" class="uk-navbar-item">
+                <a href="taikhoan.php" class="uk-navbar-item">
                     <span class="header__navbar__icon header__navbar__icon--arrow-left"></span>
                 </a>
             </div>

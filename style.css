@@ -117,6 +117,64 @@
 }
 
 @media (min-width: 1600px) {
+  .uk-grid-4-xl {
+    margin-left: -4px !important;
+  }
+  .uk-grid-4-xl > * {
+    padding-left: 4px !important;
+  }
+  .uk-grid-4-xl > .uk-grid-margin {
+    margin-top: 4px !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .uk-grid-4-l {
+    margin-left: -4px !important;
+  }
+  .uk-grid-4-l > * {
+    padding-left: 4px !important;
+  }
+  .uk-grid-4-l > .uk-grid-margin {
+    margin-top: 4px !important;
+  }
+}
+
+@media (min-width: 960px) {
+  .uk-grid-4-m {
+    margin-left: -4px !important;
+  }
+  .uk-grid-4-m > * {
+    padding-left: 4px !important;
+  }
+  .uk-grid-4-m > .uk-grid-margin {
+    margin-top: 4px !important;
+  }
+}
+
+@media (min-width: 640px) {
+  .uk-grid-4-s {
+    margin-left: -4px !important;
+  }
+  .uk-grid-4-s > * {
+    padding-left: 4px !important;
+  }
+  .uk-grid-4-s > .uk-grid-margin {
+    margin-top: 4px !important;
+  }
+}
+
+.uk-grid-4 {
+  margin-left: -4px;
+}
+.uk-grid-4 > * {
+  padding-left: 4px;
+}
+.uk-grid-4 > .uk-grid-margin {
+  margin-top: 4px;
+}
+
+@media (min-width: 1600px) {
   .uk-grid-8-xl {
     margin-left: -8px !important;
   }
@@ -413,6 +471,10 @@
   color: #0cb0a7;
 }
 
+.text-50CD89 {
+  color: #50cd89;
+}
+
 .text-9A96AA, .danhmucchitiet__search__input::placeholder {
   color: #9a96aa;
 }
@@ -457,6 +519,10 @@
   margin-top: 14px;
 }
 
+.item-16px:nth-child(n+2) {
+  margin-top: 16px;
+}
+
 .item-20px:nth-child(n+2) {
   margin-top: 20px;
 }
@@ -467,6 +533,10 @@
 
 .item-30px:nth-child(n+2) {
   margin-top: 30px;
+}
+
+.item-32px:nth-child(n+2) {
+  margin-top: 32px;
 }
 
 .item-40px:nth-child(n+2) {
@@ -531,6 +601,10 @@
   border-radius: 15px;
 }
 
+.rounded-16px {
+  border-radius: 16px;
+}
+
 .rounded-20px {
   border-radius: 20px;
 }
@@ -579,16 +653,20 @@
   line-height: 1.67;
 }
 
+.bg-000-FFF {
+  background: rgba(0, 0, 0, 0.5);
+}
+
 .bg-EFE7CA, .home__bookAuthor__card.uk-active {
   background: #EFE7CA;
 }
 
-.bg-F2F4F6 {
-  background: #F2F4F6;
+.bg-FFFACC {
+  background: #FFFACC;
 }
 
-.bg-000-FFF {
-  background: rgba(0, 0, 0, 0.5);
+.bg-F2F4F6 {
+  background: #F2F4F6;
 }
 
 .bg-EDEBFC {
@@ -611,10 +689,6 @@
   background: #FFF;
 }
 
-.bg-F65D4E, .header__navbar__icon--cart[data-count]:before {
-  background: #F65D4E;
-}
-
 .bg-F6F6F6 {
   background: #F6F6F6;
 }
@@ -623,16 +697,24 @@
   background: #F7F7F7;
 }
 
-.bg-966412, .danhmucchitiet__fillter__dinhdang__checkbox:checked ~ .danhmucchitiet__fillter__dinhdang__label {
-  background: #966412;
-}
-
 .bg-E5E5E5, .sachdamua__progress {
   background: #E5E5E5;
 }
 
+.bg-F65D4E, .header__navbar__icon--cart[data-count]:before {
+  background: #F65D4E;
+}
+
+.bg-966412, .danhmucchitiet__fillter__dinhdang__checkbox:checked ~ .danhmucchitiet__fillter__dinhdang__label {
+  background: #966412;
+}
+
 .bg-0CB0A7, .sachdamua__progress[value]::-webkit-progress-value {
   background: #0CB0A7;
+}
+
+.bg-E8FFF3 {
+  background: #E8FFF3;
 }
 
 .mh-60, .footer__nav__a, .header__navbar .uk-navbar-nav > li > a, .header__navbar .uk-navbar-item, .header__navbar .uk-navbar-toggle {
@@ -641,6 +723,10 @@
 
 .gap-0 {
   gap: 0px;
+}
+
+.gap-8 {
+  gap: 8px;
 }
 
 .padding-12 {
@@ -1002,6 +1088,43 @@
 }
 .sachdamua__progress {
   height: 4px;
+}
+.taikhoan__section {
+  padding-top: 24px;
+  padding-bottom: 40px;
+}
+.taikhoan__bg {
+  min-height: 251px;
+  border-radius: 0px 0px 20px 20px;
+}
+.taikhoan__btnNap {
+  line-height: 48px;
+  text-transform: inherit;
+  background: var(--brand-color, linear-gradient(284deg, #FFC01F -30.8%, #FFF38C 155.96%));
+}
+.taikhoan__box {
+  height: 128px;
+  padding: 20px 16px var(--Number-12, 12px) 16px;
+  align-items: flex-start;
+  flex: 1 0 0;
+}
+.taikhoan__box__icon {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  justify-content: center;
+  align-items: center;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='20' viewBox='0 0 16 20' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M11.6023 3.25H4.39826C3.23581 1.67982 4.80193 -0.517727 6.74734 0.109848L7.67511 0.409141C7.88634 0.477283 8.11419 0.477283 8.32543 0.409141L9.2532 0.109848C11.1986 -0.517727 12.7647 1.67982 11.6023 3.25ZM4.50643 4.75H11.4941C12.8134 5.48048 13.8441 6.70013 14.316 8.21035L15.566 12.2104C16.7734 16.0739 13.887 20 9.83912 20H6.16141C2.11357 20 -0.77284 16.0739 0.43453 12.2104L1.68453 8.21035C2.15648 6.70013 3.18715 5.48048 4.50643 4.75ZM8.00024 10C9.38096 10 10.5002 11.1193 10.5002 12.5C10.5002 13.8807 9.38096 15 8.00024 15C6.61953 15 5.50024 13.8807 5.50024 12.5C5.50024 11.1193 6.61953 10 8.00024 10Z' fill='%23FFC01F'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.taikhoan__box__label {
+  display: flex;
+  padding: 6px 11.5px;
+  align-items: flex-start;
+  gap: 10px;
+  top: -16px;
+  right: 9px;
 }
 
 /*# sourceMappingURL=style.css.map */

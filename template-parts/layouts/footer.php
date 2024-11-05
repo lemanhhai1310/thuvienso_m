@@ -3,7 +3,7 @@
         <div class="uk-navbar-left uk-flex-1">
             <ul class="footer__nav uk-navbar-nav uk-flex-1 uk-child-width-expand uk-grid-match">
                 <li class="footer__nav__li <?= (isset($isHome) && $isHome) ? 'uk-active' : '' ?>">
-                    <a href="#" class="footer__nav__a">
+                    <a href="." class="footer__nav__a">
                         <div class="uk-flex uk-flex-column uk-flex-middle">
                             <div class="footer__nav__bg">
                                 <span class="footer__nav__icon footer__nav__icon--home"></span>
@@ -42,8 +42,8 @@
                         </div>
                     </a>
                 </li>
-                <li class="footer__nav__li">
-                    <a href="#" class="footer__nav__a">
+                <li class="footer__nav__li <?= (isset($isAcc) && $isAcc) ? 'uk-active' : '' ?>">
+                    <a href="taikhoan.php" class="footer__nav__a">
                         <div class="uk-flex uk-flex-column uk-flex-middle">
                             <div class="footer__nav__bg">
                                 <span class="footer__nav__icon footer__nav__icon--account"></span>

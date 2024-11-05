@@ -1,5 +1,6 @@
 $sizes:(
         '0': 0px,
+        '8': 8px,
 );
 @each $name,$value in $sizes {
   .gap-#{$name} {

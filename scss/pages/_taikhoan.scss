@@ -1,0 +1,39 @@
+.taikhoan{
+  &__section{
+    padding-top: 24px;
+    padding-bottom: 40px;
+  }
+  &__bg{
+    min-height: 251px;
+    border-radius: 0px 0px 20px 20px;
+  }
+  &__btnNap{
+    line-height: 48px;
+    text-transform: inherit;
+    background: var(--brand-color, linear-gradient(284deg, #FFC01F -30.8%, #FFF38C 155.96%));
+  }
+  &__box{
+    height: 128px;
+    padding: 20px 16px var(--Number-12, 12px) 16px;
+    align-items: flex-start;
+    flex: 1 0 0;
+    &__icon{
+      display: flex;
+      width: 24px;
+      height: 24px;
+      justify-content: center;
+      align-items: center;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='20' viewBox='0 0 16 20' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M11.6023 3.25H4.39826C3.23581 1.67982 4.80193 -0.517727 6.74734 0.109848L7.67511 0.409141C7.88634 0.477283 8.11419 0.477283 8.32543 0.409141L9.2532 0.109848C11.1986 -0.517727 12.7647 1.67982 11.6023 3.25ZM4.50643 4.75H11.4941C12.8134 5.48048 13.8441 6.70013 14.316 8.21035L15.566 12.2104C16.7734 16.0739 13.887 20 9.83912 20H6.16141C2.11357 20 -0.77284 16.0739 0.43453 12.2104L1.68453 8.21035C2.15648 6.70013 3.18715 5.48048 4.50643 4.75ZM8.00024 10C9.38096 10 10.5002 11.1193 10.5002 12.5C10.5002 13.8807 9.38096 15 8.00024 15C6.61953 15 5.50024 13.8807 5.50024 12.5C5.50024 11.1193 6.61953 10 8.00024 10Z' fill='%23FFC01F'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    &__label{
+      display: flex;
+      padding: 6px 11.5px;
+      align-items: flex-start;
+      gap: 10px;
+      top: -16px;
+      right: 9px;
+    }
+  }
+}
