@@ -1,0 +1,11 @@
+$sizes:(
+6px,
+10px,
+15px,
+20px,
+);
+@each $i in $sizes {
+  .rounded-#{$i}{
+    border-radius: #{$i};
+  }
+}

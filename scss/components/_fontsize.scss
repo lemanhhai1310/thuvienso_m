@@ -1,0 +1,16 @@
+$sizes:(
+11px,
+14px,
+16px,
+18px,
+20px,
+26px,
+31px,
+41px,
+48px,
+);
+@each $i in $sizes {
+  .fz-#{$i}{
+    font-size: #{$i};
+  }
+}

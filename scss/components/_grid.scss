@@ -20,13 +20,11 @@
     }
   }
 }
-$j:
-5,
-10,
-20,
-30,
-40,
-50;
+$j:(
+8,
+12,
+28,
+);
 @each $i in $j {
   .uk-grid-#{$i}-xl{
     @include media-breakpoint-up('xl'){

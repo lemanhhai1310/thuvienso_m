@@ -1,0 +1,14 @@
+$colors: (
+        'EFE7CA': #EFE7CA,
+        'F2F4F6': #F2F4F6,
+        '000-FFF': rgba(0, 0, 0, 0.50),
+        'EDEBFC': #EDEBFC,
+        'E9F9FD': #E9F9FD,
+        'E8F6E1': #E8F6E1,
+        'FBF1E6': #FBF1E6,
+);
+@each $name,$value in $colors {
+  .bg-#{$name} {
+    background: $value;
+  }
+}
