@@ -69,7 +69,7 @@
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="thongtintaikhoan.php">
                     <span class="icons__20px icons__20px--user-add"></span>
                     <span class="taikhoan__nav__txt">Thông tin tài khoản</span>
                 </a>

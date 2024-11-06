@@ -1,0 +1,45 @@
+.thongtintaikhoan {
+  &__item{
+    &:nth-child(n+2){
+      $x:24px;
+      margin-top: $x;
+      padding-top: $x;
+      border-top: 1px solid #DDE5EF;
+    }
+  }
+  &__label{
+    @extend .text-4B5563;
+    @extend .fz-14px;
+    @extend .be-vietnam-pro-500;
+  }
+  &__input{
+    @extend .rounded-16px;
+    background: #F6F6F6;
+    border: 1px solid #F6F6F6;
+    @extend .text-4B5563;
+    @extend .fz-14px;
+    @extend .be-vietnam-pro-600;
+    height: 48px;
+    &:focus{
+      border-color: #FC0;
+    }
+    &::placeholder{
+      color: #9A96AA;
+    }
+  }
+  &__icon{
+    $x:50px;
+    width: #{$x};
+    &:not(.uk-form-icon-flip){
+      ~ *>.uk-button,
+      ~ .uk-input{
+        padding-left: #{$x} !important;
+      }
+    }
+    &.uk-form-icon-flip{
+      ~ .uk-input{
+        padding-right: #{$x} !important;
+      }
+    }
+  }
+}
