@@ -36,4 +36,37 @@
       right: 9px;
     }
   }
+  &__nav{
+    &__txt{
+      position: relative;
+      top: 2px;
+    }
+    >li{
+      >a{
+        gap: 8px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        position: relative;
+        @extend .fz-14px;
+        @extend .be-vietnam-pro-500;
+        @extend .lh-142;
+        @extend .text-5E5D5A;
+        &:not(.logout){
+          &:after{
+            content: "";
+            width: 24px;
+            height: 24px;
+            display: flex;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M9.53151 6.41438C9.20806 6.67313 9.15562 7.1451 9.41438 7.46855L13.0396 12L9.41438 16.5315C9.15562 16.855 9.20806 17.3269 9.53151 17.5857C9.85495 17.8444 10.3269 17.792 10.5857 17.4685L14.5857 12.4685C14.8048 12.1946 14.8048 11.8054 14.5857 11.5315L10.5857 6.53151C10.3269 6.20806 9.85495 6.15562 9.53151 6.41438Z' fill='%2328303F'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: center;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+        }
+      }
+    }
+  }
 }

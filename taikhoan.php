@@ -60,6 +60,68 @@
             </div>
         </div>
         <button class="uk-button uk-width item-16px rounded-16px taikhoan__btnNap fz-16px be-vietnam-pro-600 text-966412">Nạp Book Coin</button>
+        <div class="text-181C32 fz-16px be-vietnam-pro-600 lh-125 item-32px">Thông tin tài khoản</div>
+        <ul class="taikhoan__nav uk-nav uk-nav-default item-16px">
+            <li>
+                <a href="sachdamua.php">
+                    <span class="icons__20px icons__20px--book-check"></span>
+                    <span class="taikhoan__nav__txt">Sách đã mua</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icons__20px icons__20px--user-add"></span>
+                    <span class="taikhoan__nav__txt">Thông tin tài khoản</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icons__20px icons__20px--cart"></span>
+                    <span class="taikhoan__nav__txt">Lịch sử mua hàng</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icons__20px icons__20px--wallet"></span>
+                    <span class="taikhoan__nav__txt">Lịch sử nạp tiền</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icons__20px icons__20px--lock"></span>
+                    <span class="taikhoan__nav__txt">Đổi mật khẩu</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="divider item-12px"></div>
+    <div class="uk-container item-20px">
+        <div class="text-181C32 fz-16px be-vietnam-pro-600 lh-125">Hỗ trợ</div>
+        <ul class="taikhoan__nav uk-nav uk-nav-default item-16px">
+            <li>
+                <a href="#">
+                    <span class="icons__20px icons__20px--notification"></span>
+                    <span class="taikhoan__nav__txt">Thông báo</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icons__20px icons__20px--receipt"></span>
+                    <span class="taikhoan__nav__txt">Chính sách bảo mật</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="divider item-12px"></div>
+    <div class="uk-container item-20px">
+        <ul class="taikhoan__nav uk-nav uk-nav-default item-16px">
+            <li>
+                <a href="#" class="logout">
+                    <span class="icons__20px icons__20px--out"></span>
+                    <span class="taikhoan__nav__txt be-vietnam-pro-600 text-D83A40">Đăng xuất</span>
+                </a>
+            </li>
+        </ul>
     </div>
 </div>
 <?php require "template-parts/layouts/footer.php"; ?>
