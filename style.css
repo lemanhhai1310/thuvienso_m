@@ -28,7 +28,7 @@
   font-style: normal;
 }
 
-.be-vietnam-pro-600, .thongtintaikhoan__input, .danhmucchitiet__search__input, .header__navbar__icon--cart[data-count]:before {
+.be-vietnam-pro-600, .lichsumuahang__label, .lichsumuahang__btn, .thongtintaikhoan__input, .danhmucchitiet__search__input, .header__navbar__icon--cart[data-count]:before {
   font-family: "Be Vietnam Pro", sans-serif;
   font-weight: 600;
   font-style: normal;
@@ -356,7 +356,7 @@
   font-size: 11px;
 }
 
-.fz-12px {
+.fz-12px, .lichsumuahang__btn {
   font-size: 12px;
 }
 
@@ -447,7 +447,7 @@
   color: #444444;
 }
 
-.text-999, .home__linkAll:hover {
+.text-999, .lichsumuahang__btn, .home__linkAll:hover {
   color: #999999;
 }
 
@@ -597,7 +597,7 @@
   border-radius: 4px;
 }
 
-.rounded-6px {
+.rounded-6px, .lichsumuahang__btn {
   border-radius: 6px;
 }
 
@@ -709,7 +709,7 @@
   background: #F6F6F6;
 }
 
-.bg-F7F7F7, .danhmucchitiet__fillter__dinhdang__label, .danhmucchitiet__fillter__sort__btn {
+.bg-F7F7F7, .lichsumuahang__btn, .danhmucchitiet__fillter__dinhdang__label, .danhmucchitiet__fillter__sort__btn {
   background: #F7F7F7;
 }
 
@@ -1254,6 +1254,25 @@
 }
 .thongtintaikhoan__icon.uk-form-icon-flip ~ .uk-input {
   padding-right: 50px !important;
+}
+
+.lichsumuahang__tab:before {
+  opacity: 0;
+  display: none;
+}
+.lichsumuahang__btn {
+  text-transform: inherit;
+  padding: 0 11px;
+  line-height: 30px;
+}
+.uk-active > .lichsumuahang__btn {
+  color: var(--color);
+  background: var(--bg);
+}
+.lichsumuahang__label {
+  color: var(--color);
+  background: var(--bg);
+  padding: 6px 11px;
 }
 
 /*# sourceMappingURL=style.css.map */

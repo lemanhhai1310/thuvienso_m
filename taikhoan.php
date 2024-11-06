@@ -75,7 +75,7 @@
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="lichsumuahang.php">
                     <span class="icons__20px icons__20px--cart"></span>
                     <span class="taikhoan__nav__txt">Lịch sử mua hàng</span>
                 </a>

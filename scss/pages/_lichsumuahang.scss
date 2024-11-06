@@ -1,0 +1,28 @@
+.lichsumuahang {
+  &__tab{
+    &:before{
+      opacity: 0;
+      display: none;
+    }
+  }
+  &__btn{
+    @extend .fz-12px;
+    @extend .text-999;
+    @extend .be-vietnam-pro-600;
+    text-transform: inherit;
+    padding: 0 11px;
+    @extend .rounded-6px;
+    line-height: 30px;
+    @extend .bg-F7F7F7;
+    .uk-active> &{
+      color: var(--color);
+      background: var(--bg);
+    }
+  }
+  &__label{
+    color: var(--color);
+    background: var(--bg);
+    padding: 6px 11px;
+    @extend .be-vietnam-pro-600;
+  }
+}
