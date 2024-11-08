@@ -28,7 +28,7 @@
   font-style: normal;
 }
 
-.be-vietnam-pro-600, .lichsumuahang__label, .lichsumuahang__btn, .thongtintaikhoan__input, .danhmucchitiet__search__input, .header__navbar__icon--cart[data-count]:before {
+.be-vietnam-pro-600, .lichsunaptien__tab > li > a, .lichsumuahang__label, .lichsumuahang__btn, .thongtintaikhoan__input, .danhmucchitiet__search__input, .header__navbar__icon--cart[data-count]:before {
   font-family: "Be Vietnam Pro", sans-serif;
   font-weight: 600;
   font-style: normal;
@@ -114,6 +114,64 @@
 }
 .uk-height-min-large {
   min-height: 450px;
+}
+
+@media (min-width: 1600px) {
+  .uk-grid-0-xl {
+    margin-left: -0px !important;
+  }
+  .uk-grid-0-xl > * {
+    padding-left: 0px !important;
+  }
+  .uk-grid-0-xl > .uk-grid-margin {
+    margin-top: 0px !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .uk-grid-0-l {
+    margin-left: -0px !important;
+  }
+  .uk-grid-0-l > * {
+    padding-left: 0px !important;
+  }
+  .uk-grid-0-l > .uk-grid-margin {
+    margin-top: 0px !important;
+  }
+}
+
+@media (min-width: 960px) {
+  .uk-grid-0-m {
+    margin-left: -0px !important;
+  }
+  .uk-grid-0-m > * {
+    padding-left: 0px !important;
+  }
+  .uk-grid-0-m > .uk-grid-margin {
+    margin-top: 0px !important;
+  }
+}
+
+@media (min-width: 640px) {
+  .uk-grid-0-s {
+    margin-left: -0px !important;
+  }
+  .uk-grid-0-s > * {
+    padding-left: 0px !important;
+  }
+  .uk-grid-0-s > .uk-grid-margin {
+    margin-top: 0px !important;
+  }
+}
+
+.uk-grid-0 {
+  margin-left: -0px;
+}
+.uk-grid-0 > * {
+  padding-left: 0px;
+}
+.uk-grid-0 > .uk-grid-margin {
+  margin-top: 0px;
 }
 
 @media (min-width: 1600px) {
@@ -356,7 +414,7 @@
   font-size: 11px;
 }
 
-.fz-12px, .lichsumuahang__btn {
+.fz-12px, .lichsunaptien__tab > li > a, .lichsumuahang__btn {
   font-size: 12px;
 }
 
@@ -427,12 +485,24 @@
   overflow: hidden;
 }
 
-.text-000, .timkiemdonhang__searchInput, .home__banner__btn, .home__deal__btn:hover {
+.text-000, .lichsunaptien__tab > li.uk-active > a, .timkiemdonhang__searchInput, .home__banner__btn, .home__deal__btn:hover {
   color: black;
+}
+
+.text-14081C {
+  color: #14081c;
+}
+
+.text-514957 {
+  color: #514957;
 }
 
 .text-0C121C {
   color: #0c121c;
+}
+
+.text-0D1017 {
+  color: #0d1017;
 }
 
 .text-181C32 {
@@ -443,6 +513,10 @@
   color: #444241;
 }
 
+.text-A1A1A1 {
+  color: #a1a1a1;
+}
+
 .text-C9CDD2, .timkiemdonhang__searchInput::placeholder {
   color: #c9cdd2;
 }
@@ -451,7 +525,7 @@
   color: #444444;
 }
 
-.text-999, .lichsumuahang__btn, .home__linkAll:hover {
+.text-999, .lichsunaptien__tab > li > a, .lichsumuahang__btn, .home__linkAll:hover {
   color: #999999;
 }
 
@@ -487,6 +561,10 @@
   color: #50cd89;
 }
 
+.text-72C949 {
+  color: #72c949;
+}
+
 .text-9A96AA, .danhmucchitiet__search__input::placeholder {
   color: #9a96aa;
 }
@@ -501,6 +579,10 @@
 
 .text-5E5D5A, .taikhoan__nav > li > a {
   color: #5e5d5a;
+}
+
+.text-F1416C {
+  color: #f1416c;
 }
 
 .item-2px:nth-child(n+2) {
@@ -637,6 +719,10 @@
   border: var(----f1-number-1, 1px) solid var(--200, #DDE5EF);
 }
 
+.lh-114 {
+  line-height: 1.14286;
+}
+
 .lh-119 {
   line-height: 1.19512;
 }
@@ -743,6 +829,10 @@
 
 .bg-E8FFF3 {
   background: #E8FFF3;
+}
+
+.bg-FCD9E2 {
+  background: #FCD9E2;
 }
 
 .mh-60, .footer__nav__a, .header__navbar .uk-navbar-nav > li > a, .header__navbar .uk-navbar-item, .header__navbar .uk-navbar-toggle {
@@ -1289,6 +1379,20 @@
 
 .timkiemdonhang__searchInput {
   border: none !important;
+}
+.lichsunaptien__tab:before {
+  display: none;
+}
+.lichsunaptien__tab > li > a {
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 12px;
+}
+.lichsunaptien__tab > li.uk-active > a {
+  border-color: #0CB0A7;
+}
+.lichsunaptien__item {
+  padding: 8px 0;
 }
 
 /*# sourceMappingURL=style.css.map */

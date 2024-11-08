@@ -1,0 +1,26 @@
+.lichsunaptien {
+  &__tab{
+    &:before{
+      display: none;
+    }
+    >li{
+      >a{
+        text-transform: inherit;
+        padding-top: 0;
+        padding-bottom: 12px;
+        @extend .be-vietnam-pro-600;
+        @extend .text-999;
+        @extend .fz-12px;
+      }
+      &.uk-active{
+        >a{
+          @extend .text-000;
+          border-color: #0CB0A7;
+        }
+      }
+    }
+  }
+  &__item{
+    padding: 8px 0;
+  }
+}

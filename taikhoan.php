@@ -81,7 +81,7 @@
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="lichsunaptien.php">
                     <span class="icons__20px icons__20px--wallet"></span>
                     <span class="taikhoan__nav__txt">Lịch sử nạp tiền</span>
                 </a>
