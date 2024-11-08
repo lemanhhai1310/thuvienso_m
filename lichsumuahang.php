@@ -17,7 +17,7 @@
                 </div>
             </div>
             <div class="uk-navbar-right">
-                <a href="#" class="uk-navbar-toggle">
+                <a href="timkiemdonhang1.php" class="uk-navbar-toggle">
                     <span class="header__navbar__icon header__navbar__icon--search"></span>
                 </a>
             </div>

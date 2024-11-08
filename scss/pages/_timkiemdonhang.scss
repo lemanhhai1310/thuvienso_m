@@ -1,0 +1,10 @@
+.timkiemdonhang {
+  &__searchInput{
+    border: none !important;
+    @extend .fz-18px;
+    @extend .text-000;
+    &::placeholder {
+      @extend .text-C9CDD2;
+    }
+  }
+}
