@@ -1,0 +1,552 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="REFRESH" content="1800"/>
+  <title>Lịch sử nạp tiền - Thuvienso App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <!--Google Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!--CSS-->
+  <link rel="stylesheet" href="dist/css/uikit.min.css" />
+  <link rel="stylesheet" href="style.css?v=1731123674">
+
+  <!--JS-->
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.13/dist/js/uikit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.13/dist/js/uikit-icons.min.js"></script>
+  <script src="js/app.js?v=1731123674"></script>
+
+  <style>
+    .be-vietnam-pro-100 {
+      font-family: "Be Vietnam Pro", sans-serif;
+      font-weight: 100;
+      font-style: normal;
+    }
+
+    .be-vietnam-pro-200 {
+      font-family: "Be Vietnam Pro", sans-serif;
+      font-weight: 200;
+      font-style: normal;
+    }
+
+    .be-vietnam-pro-300 {
+      font-family: "Be Vietnam Pro", sans-serif;
+      font-weight: 300;
+      font-style: normal;
+    }
+
+    .be-vietnam-pro-400 {
+      font-family: "Be Vietnam Pro", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    .be-vietnam-pro-500 {
+      font-family: "Be Vietnam Pro", sans-serif;
+      font-weight: 500;
+      font-style: normal;
+    }
+
+    .be-vietnam-pro-600 {
+      font-family: "Be Vietnam Pro", sans-serif;
+      font-weight: 600;
+      font-style: normal;
+    }
+
+    .be-vietnam-pro-700 {
+      font-family: "Be Vietnam Pro", sans-serif;
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    .be-vietnam-pro-800 {
+      font-family: "Be Vietnam Pro", sans-serif;
+      font-weight: 800;
+      font-style: normal;
+    }
+
+    .be-vietnam-pro-900 {
+      font-family: "Be Vietnam Pro", sans-serif;
+      font-weight: 900;
+      font-style: normal;
+    }
+
+    .be-vietnam-pro-100-italic {
+      font-family: "Be Vietnam Pro", sans-serif;
+      font-weight: 100;
+      font-style: italic;
+    }
+
+    .be-vietnam-pro-200-italic {
+      font-family: "Be Vietnam Pro", sans-serif;
+      font-weight: 200;
+      font-style: italic;
+    }
+
+    .be-vietnam-pro-300-italic {
+      font-family: "Be Vietnam Pro", sans-serif;
+      font-weight: 300;
+      font-style: italic;
+    }
+
+    .be-vietnam-pro-400-italic {
+      font-family: "Be Vietnam Pro", sans-serif;
+      font-weight: 400;
+      font-style: italic;
+    }
+
+    .be-vietnam-pro-500-italic {
+      font-family: "Be Vietnam Pro", sans-serif;
+      font-weight: 500;
+      font-style: italic;
+    }
+
+    .be-vietnam-pro-600-italic {
+      font-family: "Be Vietnam Pro", sans-serif;
+      font-weight: 600;
+      font-style: italic;
+    }
+
+    .be-vietnam-pro-700-italic {
+      font-family: "Be Vietnam Pro", sans-serif;
+      font-weight: 700;
+      font-style: italic;
+    }
+
+    .be-vietnam-pro-800-italic {
+      font-family: "Be Vietnam Pro", sans-serif;
+      font-weight: 800;
+      font-style: italic;
+    }
+
+    .be-vietnam-pro-900-italic {
+      font-family: "Be Vietnam Pro", sans-serif;
+      font-weight: 900;
+      font-style: italic;
+    }
+
+  </style>
+</head>
+<body class="uk-background-muted">
+<!--app-->
+<div id="app" class="app uk-background-default width-1024px uk-box-shadow-small uk-margin-auto uk-height-viewport uk-offcanvas-content uk-overflow-hidden uk-position-relative">
+  <nav class="header__navbar uk-navbar-container" uk-sticky="end: !.app; offset: 0; show-on-up: false; animation: uk-animation-slide-top">
+    <div class="uk-container">
+      <div uk-navbar>
+        <div class="uk-navbar-left">
+          <a href="taikhoan.php" class="uk-navbar-item">
+            <span class="header__navbar__icon header__navbar__icon--arrow-left"></span>
+          </a>
+        </div>
+        <div class="uk-navbar-center">
+          <div class="uk-navbar-item">
+            <h1 class="uk-margin-remove text-181C32 fz-16px be-vietnam-pro-600 lh-125">Lịch sử nạp tiền</h1>
+          </div>
+        </div>
+        <div class="uk-navbar-right">
+          <a href="#offcanvas-overlay-fillter" uk-toggle class="uk-navbar-toggle">
+            <span class="header__navbar__icon header__navbar__icon--filter"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="uk-container uk-section-xsmall">
+    <div class="uk-text-center be-vietnam-pro-600">
+      <div class="text-14081C fz-20px lh-120">580.450</div>
+      <div class="item-4px text-A1A1A1">Số dư ví hiện tại</div>
+    </div>
+    <ul class="lichsunaptien__tab uk-child-width-expand uk-grid-0 item-20px" uk-grid uk-tab>
+      <li class="uk-active"><a href="#">Ví chính</a></li>
+      <li><a href="#">Ví khuyến mãi</a></li>
+    </ul>
+    <div class="uk-switcher item-20px">
+      <div>
+        <div class="item-20px">
+          <div class="fz-14px be-vietnam-pro-700 text-514957 lh-128">Tháng 6</div>
+          <div class="divider item-8px"></div>
+          <div class="item-8px lichsunaptien__item">
+            <div class="uk-grid uk-flex-middle uk-grid-4" uk-grid>
+              <div>
+                <div class="uk-cover-container uk-border-circle bg-E8F6E1">
+                  <div class="uk-position-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="4" height="6" viewBox="0 0 4 6" fill="none">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M1.82306 0.623211C1.92069 0.52558 2.07898 0.52558 2.17661 0.623211L3.50995 1.95654C3.60758 2.05418 3.60758 2.21247 3.50995 2.3101C3.41232 2.40773 3.25402 2.40773 3.15639 2.3101L2.24984 1.40354L2.24984 4.79999C2.24984 4.93806 2.13791 5.04999 1.99984 5.04999C1.86177 5.04999 1.74984 4.93806 1.74984 4.79999L1.74984 1.40354L0.843281 2.3101C0.74565 2.40773 0.587358 2.40773 0.489727 2.3101C0.392096 2.21247 0.392096 2.05418 0.489727 1.95654L1.82306 0.623211Z" fill="#72C949"/>
+                    </svg>
+                  </div>
+                  <canvas width="16" height="16"></canvas>
+                </div>
+              </div>
+              <div>
+                <div class="lh-133 be-vietnam-pro-500 fz-12px text-A1A1A1">#3093985</div>
+              </div>
+            </div>
+            <div class="uk-grid uk-flex-middle uk-grid-small item-2px" uk-grid>
+              <div class="uk-width-expand">
+                <div class="fz-16px be-vietnam-pro-600 text-0D1017 lh-125">Nạp tiền</div>
+              </div>
+              <div class="uk-width-auto">
+                <div class="fz-14px be-vietnam-pro-600 text-000 lh-128">+1.000.000</div>
+              </div>
+            </div>
+            <div class="uk-grid uk-flex-middle uk-grid-small item-6px" uk-grid>
+              <div class="uk-width-expand">
+                <div class="text-A1A1A1 fz-14px be-vietnam-pro-500 lh-114">20:45 18/06/2024</div>
+              </div>
+              <div class="uk-width-auto">
+                <div class="fz-14px be-vietnam-pro-500 lh-114 text-72C949">Hoàn thành</div>
+              </div>
+            </div>
+          </div>
+          <div class="item-8px lichsunaptien__item">
+            <div class="uk-grid uk-flex-middle uk-grid-4" uk-grid>
+              <div>
+                <div class="uk-cover-container uk-border-circle bg-FCD9E2">
+                  <div class="uk-position-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="9" viewBox="0 0 8 9" fill="none">
+                      <path d="M6 4.79999L2 4.79999" stroke="#F1416C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                  <canvas width="16" height="16"></canvas>
+                </div>
+              </div>
+              <div>
+                <div class="lh-133 be-vietnam-pro-500 fz-12px text-A1A1A1">#3093985</div>
+              </div>
+            </div>
+            <div class="uk-grid uk-flex-middle uk-grid-small item-2px" uk-grid>
+              <div class="uk-width-expand">
+                <div class="fz-16px be-vietnam-pro-600 text-0D1017 lh-125">Nạp tiền</div>
+              </div>
+              <div class="uk-width-auto">
+                <div class="fz-14px be-vietnam-pro-600 text-000 lh-128">+2.400.000</div>
+              </div>
+            </div>
+            <div class="uk-grid uk-flex-middle uk-grid-small item-6px" uk-grid>
+              <div class="uk-width-expand">
+                <div class="text-A1A1A1 fz-14px be-vietnam-pro-500 lh-114">20:45 18/06/2024</div>
+              </div>
+              <div class="uk-width-auto">
+                <div class="fz-14px be-vietnam-pro-500 lh-114 text-F1416C">Có lỗi xảy ra</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item-20px">
+          <div class="fz-14px be-vietnam-pro-700 text-514957 lh-128">Tháng 5</div>
+          <div class="divider item-8px"></div>
+          <div class="item-8px lichsunaptien__item">
+            <div class="uk-grid uk-flex-middle uk-grid-4" uk-grid>
+              <div>
+                <div class="uk-cover-container uk-border-circle bg-E8F6E1">
+                  <div class="uk-position-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="4" height="6" viewBox="0 0 4 6" fill="none">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M1.82306 0.623211C1.92069 0.52558 2.07898 0.52558 2.17661 0.623211L3.50995 1.95654C3.60758 2.05418 3.60758 2.21247 3.50995 2.3101C3.41232 2.40773 3.25402 2.40773 3.15639 2.3101L2.24984 1.40354L2.24984 4.79999C2.24984 4.93806 2.13791 5.04999 1.99984 5.04999C1.86177 5.04999 1.74984 4.93806 1.74984 4.79999L1.74984 1.40354L0.843281 2.3101C0.74565 2.40773 0.587358 2.40773 0.489727 2.3101C0.392096 2.21247 0.392096 2.05418 0.489727 1.95654L1.82306 0.623211Z" fill="#72C949"/>
+                    </svg>
+                  </div>
+                  <canvas width="16" height="16"></canvas>
+                </div>
+              </div>
+              <div>
+                <div class="lh-133 be-vietnam-pro-500 fz-12px text-A1A1A1">#3093985</div>
+              </div>
+            </div>
+            <div class="uk-grid uk-flex-middle uk-grid-small item-2px" uk-grid>
+              <div class="uk-width-expand">
+                <div class="fz-16px be-vietnam-pro-600 text-0D1017 lh-125">Nạp tiền</div>
+              </div>
+              <div class="uk-width-auto">
+                <div class="fz-14px be-vietnam-pro-600 text-000 lh-128">+1.000.000</div>
+              </div>
+            </div>
+            <div class="uk-grid uk-flex-middle uk-grid-small item-6px" uk-grid>
+              <div class="uk-width-expand">
+                <div class="text-A1A1A1 fz-14px be-vietnam-pro-500 lh-114">20:45 18/06/2024</div>
+              </div>
+              <div class="uk-width-auto">
+                <div class="fz-14px be-vietnam-pro-500 lh-114 text-72C949">Hoàn thành</div>
+              </div>
+            </div>
+          </div>
+          <div class="item-8px lichsunaptien__item">
+            <div class="uk-grid uk-flex-middle uk-grid-4" uk-grid>
+              <div>
+                <div class="uk-cover-container uk-border-circle bg-FCD9E2">
+                  <div class="uk-position-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="9" viewBox="0 0 8 9" fill="none">
+                      <path d="M6 4.79999L2 4.79999" stroke="#F1416C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                  <canvas width="16" height="16"></canvas>
+                </div>
+              </div>
+              <div>
+                <div class="lh-133 be-vietnam-pro-500 fz-12px text-A1A1A1">#3093985</div>
+              </div>
+            </div>
+            <div class="uk-grid uk-flex-middle uk-grid-small item-2px" uk-grid>
+              <div class="uk-width-expand">
+                <div class="fz-16px be-vietnam-pro-600 text-0D1017 lh-125">Nạp tiền</div>
+              </div>
+              <div class="uk-width-auto">
+                <div class="fz-14px be-vietnam-pro-600 text-000 lh-128">+2.400.000</div>
+              </div>
+            </div>
+            <div class="uk-grid uk-flex-middle uk-grid-small item-6px" uk-grid>
+              <div class="uk-width-expand">
+                <div class="text-A1A1A1 fz-14px be-vietnam-pro-500 lh-114">20:45 18/06/2024</div>
+              </div>
+              <div class="uk-width-auto">
+                <div class="fz-14px be-vietnam-pro-500 lh-114 text-F1416C">Có lỗi xảy ra</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="item-20px">
+          <div class="fz-14px be-vietnam-pro-700 text-514957 lh-128">Tháng 6</div>
+          <div class="divider item-8px"></div>
+          <div class="item-8px lichsunaptien__item">
+            <div class="uk-grid uk-flex-middle uk-grid-4" uk-grid>
+              <div>
+                <div class="uk-cover-container uk-border-circle bg-E8F6E1">
+                  <div class="uk-position-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="4" height="6" viewBox="0 0 4 6" fill="none">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M1.82306 0.623211C1.92069 0.52558 2.07898 0.52558 2.17661 0.623211L3.50995 1.95654C3.60758 2.05418 3.60758 2.21247 3.50995 2.3101C3.41232 2.40773 3.25402 2.40773 3.15639 2.3101L2.24984 1.40354L2.24984 4.79999C2.24984 4.93806 2.13791 5.04999 1.99984 5.04999C1.86177 5.04999 1.74984 4.93806 1.74984 4.79999L1.74984 1.40354L0.843281 2.3101C0.74565 2.40773 0.587358 2.40773 0.489727 2.3101C0.392096 2.21247 0.392096 2.05418 0.489727 1.95654L1.82306 0.623211Z" fill="#72C949"/>
+                    </svg>
+                  </div>
+                  <canvas width="16" height="16"></canvas>
+                </div>
+              </div>
+              <div>
+                <div class="lh-133 be-vietnam-pro-500 fz-12px text-A1A1A1">#3093985</div>
+              </div>
+            </div>
+            <div class="uk-grid uk-flex-middle uk-grid-small item-2px" uk-grid>
+              <div class="uk-width-expand">
+                <div class="fz-16px be-vietnam-pro-600 text-0D1017 lh-125">Nạp tiền</div>
+              </div>
+              <div class="uk-width-auto">
+                <div class="fz-14px be-vietnam-pro-600 text-000 lh-128">+1.000.000</div>
+              </div>
+            </div>
+            <div class="uk-grid uk-flex-middle uk-grid-small item-6px" uk-grid>
+              <div class="uk-width-expand">
+                <div class="text-A1A1A1 fz-14px be-vietnam-pro-500 lh-114">20:45 18/06/2024</div>
+              </div>
+              <div class="uk-width-auto">
+                <div class="fz-14px be-vietnam-pro-500 lh-114 text-72C949">Hoàn thành</div>
+              </div>
+            </div>
+          </div>
+          <div class="item-8px lichsunaptien__item">
+            <div class="uk-grid uk-flex-middle uk-grid-4" uk-grid>
+              <div>
+                <div class="uk-cover-container uk-border-circle bg-FCD9E2">
+                  <div class="uk-position-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="9" viewBox="0 0 8 9" fill="none">
+                      <path d="M6 4.79999L2 4.79999" stroke="#F1416C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                  <canvas width="16" height="16"></canvas>
+                </div>
+              </div>
+              <div>
+                <div class="lh-133 be-vietnam-pro-500 fz-12px text-A1A1A1">#3093985</div>
+              </div>
+            </div>
+            <div class="uk-grid uk-flex-middle uk-grid-small item-2px" uk-grid>
+              <div class="uk-width-expand">
+                <div class="fz-16px be-vietnam-pro-600 text-0D1017 lh-125">Nạp tiền</div>
+              </div>
+              <div class="uk-width-auto">
+                <div class="fz-14px be-vietnam-pro-600 text-000 lh-128">+2.400.000</div>
+              </div>
+            </div>
+            <div class="uk-grid uk-flex-middle uk-grid-small item-6px" uk-grid>
+              <div class="uk-width-expand">
+                <div class="text-A1A1A1 fz-14px be-vietnam-pro-500 lh-114">20:45 18/06/2024</div>
+              </div>
+              <div class="uk-width-auto">
+                <div class="fz-14px be-vietnam-pro-500 lh-114 text-F1416C">Có lỗi xảy ra</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item-20px">
+          <div class="fz-14px be-vietnam-pro-700 text-514957 lh-128">Tháng 5</div>
+          <div class="divider item-8px"></div>
+          <div class="item-8px lichsunaptien__item">
+            <div class="uk-grid uk-flex-middle uk-grid-4" uk-grid>
+              <div>
+                <div class="uk-cover-container uk-border-circle bg-E8F6E1">
+                  <div class="uk-position-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="4" height="6" viewBox="0 0 4 6" fill="none">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M1.82306 0.623211C1.92069 0.52558 2.07898 0.52558 2.17661 0.623211L3.50995 1.95654C3.60758 2.05418 3.60758 2.21247 3.50995 2.3101C3.41232 2.40773 3.25402 2.40773 3.15639 2.3101L2.24984 1.40354L2.24984 4.79999C2.24984 4.93806 2.13791 5.04999 1.99984 5.04999C1.86177 5.04999 1.74984 4.93806 1.74984 4.79999L1.74984 1.40354L0.843281 2.3101C0.74565 2.40773 0.587358 2.40773 0.489727 2.3101C0.392096 2.21247 0.392096 2.05418 0.489727 1.95654L1.82306 0.623211Z" fill="#72C949"/>
+                    </svg>
+                  </div>
+                  <canvas width="16" height="16"></canvas>
+                </div>
+              </div>
+              <div>
+                <div class="lh-133 be-vietnam-pro-500 fz-12px text-A1A1A1">#3093985</div>
+              </div>
+            </div>
+            <div class="uk-grid uk-flex-middle uk-grid-small item-2px" uk-grid>
+              <div class="uk-width-expand">
+                <div class="fz-16px be-vietnam-pro-600 text-0D1017 lh-125">Nạp tiền</div>
+              </div>
+              <div class="uk-width-auto">
+                <div class="fz-14px be-vietnam-pro-600 text-000 lh-128">+1.000.000</div>
+              </div>
+            </div>
+            <div class="uk-grid uk-flex-middle uk-grid-small item-6px" uk-grid>
+              <div class="uk-width-expand">
+                <div class="text-A1A1A1 fz-14px be-vietnam-pro-500 lh-114">20:45 18/06/2024</div>
+              </div>
+              <div class="uk-width-auto">
+                <div class="fz-14px be-vietnam-pro-500 lh-114 text-72C949">Hoàn thành</div>
+              </div>
+            </div>
+          </div>
+          <div class="item-8px lichsunaptien__item">
+            <div class="uk-grid uk-flex-middle uk-grid-4" uk-grid>
+              <div>
+                <div class="uk-cover-container uk-border-circle bg-FCD9E2">
+                  <div class="uk-position-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="9" viewBox="0 0 8 9" fill="none">
+                      <path d="M6 4.79999L2 4.79999" stroke="#F1416C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                  <canvas width="16" height="16"></canvas>
+                </div>
+              </div>
+              <div>
+                <div class="lh-133 be-vietnam-pro-500 fz-12px text-A1A1A1">#3093985</div>
+              </div>
+            </div>
+            <div class="uk-grid uk-flex-middle uk-grid-small item-2px" uk-grid>
+              <div class="uk-width-expand">
+                <div class="fz-16px be-vietnam-pro-600 text-0D1017 lh-125">Nạp tiền</div>
+              </div>
+              <div class="uk-width-auto">
+                <div class="fz-14px be-vietnam-pro-600 text-000 lh-128">+2.400.000</div>
+              </div>
+            </div>
+            <div class="uk-grid uk-flex-middle uk-grid-small item-6px" uk-grid>
+              <div class="uk-width-expand">
+                <div class="text-A1A1A1 fz-14px be-vietnam-pro-500 lh-114">20:45 18/06/2024</div>
+              </div>
+              <div class="uk-width-auto">
+                <div class="fz-14px be-vietnam-pro-500 lh-114 text-F1416C">Có lỗi xảy ra</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="offcanvas-overlay-fillter" class="danhmucchitiet__offcanvas" uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar danhmucchitiet__offcanvas__bar uk-flex uk-flex-column">
+      <div class="uk-container uk-container-expand uk-margin-remove-left uk-margin-remove-right">
+        <button class="uk-offcanvas-close" type="button" uk-close></button>
+        <h3 class="uk-text-center fz-16px be-vietnam-pro-600 lh-125 text-181C32 uk-margin-remove">Bộ lọc nâng cao</h3>
+      </div>
+      <div class="uk-flex-auto uk-overflow-auto uk-section-xsmall item-20px uk-container uk-container-expand uk-margin-remove-left uk-margin-remove-right">
+        <div class="fz-14px be-vietnam-pro-600 text-181C32 lh-142">Lọc theo định dạng</div>
+        <div class="uk-grid-8 uk-grid uk-child-width-auto item-12px" uk-grid>
+          <label>
+            <input class="danhmucchitiet__fillter__dinhdang__checkbox uk-checkbox uk-hidden" type="checkbox">
+            <div class="danhmucchitiet__fillter__dinhdang__label uk-border-pill fz-14px be-vietnam-pro-500">Tất cả</div>
+          </label>
+          <label>
+            <input class="danhmucchitiet__fillter__dinhdang__checkbox uk-checkbox uk-hidden" type="checkbox">
+            <div class="danhmucchitiet__fillter__dinhdang__label uk-border-pill fz-14px be-vietnam-pro-500">Sách giấy</div>
+          </label>
+          <label>
+            <input class="danhmucchitiet__fillter__dinhdang__checkbox uk-checkbox uk-hidden" type="checkbox">
+            <div class="danhmucchitiet__fillter__dinhdang__label uk-border-pill fz-14px be-vietnam-pro-500">Có ebook</div>
+          </label>
+        </div>
+        <div class="divider item-20px"></div>
+        <div class="item-20px fz-14px be-vietnam-pro-600 text-181C32 lh-142">Sắp xếp theo</div>
+        <div class="uk-child-width item-12px uk-grid-8" uk-grid>
+          <div>
+            <div class="uk-width" uk-form-custom="target: > * > span:nth-child(2)">
+              <select aria-label="Custom controls">
+                <option value="">A tới Z</option>
+                <option value="1">Option 01</option>
+                <option value="2">Option 02</option>
+                <option value="3">Option 03</option>
+                <option value="4">Option 04</option>
+              </select>
+              <button class="danhmucchitiet__fillter__sort__btn uk-button uk-width uk-border-pill" type="button" tabindex="-1">
+                <span>Thứ tự:</span>
+                <span></span>
+                <span class="danhmucchitiet__fillter__sort__icon1" uk-icon="icon: chevron-down"></span>
+              </button>
+            </div>
+          </div>
+          <div>
+            <div class="uk-width" uk-form-custom="target: > * > span:nth-child(2)">
+              <select aria-label="Custom controls">
+                <option value="">Thấp tới cao</option>
+                <option value="1">Option 01</option>
+                <option value="2">Option 02</option>
+                <option value="3">Option 03</option>
+                <option value="4">Option 04</option>
+              </select>
+              <button class="danhmucchitiet__fillter__sort__btn uk-button uk-border-pill uk-width" type="button" tabindex="-1">
+                <span>Tình trạng đọc:</span>
+                <span></span>
+                <span class="danhmucchitiet__fillter__sort__icon2" uk-icon="icon: arrow-up"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="divider item-20px"></div>
+        <div class="item-20px fz-14px be-vietnam-pro-600 text-181C32 lh-142">Chủ đề</div>
+        <div class="uk-grid-small uk-child-width uk-grid item-12px" uk-grid>
+          <div>
+            <label>
+              <input class="uk-checkbox danhmucchitiet__fillter__chude__checkbox" type="checkbox">
+              <span class="danhmucchitiet__fillter__chude__label">Phiêu lưu, hành động</span>
+            </label>
+          </div>
+          <div>
+            <label>
+              <input class="uk-checkbox danhmucchitiet__fillter__chude__checkbox" type="checkbox">
+              <span class="danhmucchitiet__fillter__chude__label">Tâm lý học</span>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="uk-container uk-container-expand uk-margin-remove-left uk-margin-remove-right danhmucchitiet__fillter__section">
+        <div class="uk-section-xsmall" style="padding: 16px 0;">
+          <div class="uk-child-width-expand uk-grid uk-grid-8" uk-grid>
+            <div>
+              <button class="danhmucchitiet__fillter__btn danhmucchitiet__fillter__btn--reset uk-button uk-width uk-border-pill fz-16px be-vietnam-pro-600">Đặt lại</button>
+            </div>
+            <div>
+              <button class="danhmucchitiet__fillter__btn danhmucchitiet__fillter__btn--submit uk-button uk-width uk-border-pill fz-16px be-vietnam-pro-600">Lọc</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const element = document.querySelector(".danhmucchitiet__offcanvas");
+    // UIkit.offcanvas(element).show();
+  </script></div>
+<!--/app-->
+</body>
+</html>
