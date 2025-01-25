@@ -8,34 +8,32 @@ document.addEventListener('uikit:init', () => {
     console.log("uikit:init")
 })
 
-const x = document.querySelector.bind(document);
-const xx = document.querySelectorAll.bind(document);
-
-const app = {
+const f = document.querySelector.bind(document);
+const ff = document.querySelectorAll.bind(document);
+const footer = {
     render: function () {
-        // Lazy load image
-        const imageElements = xx(".lazy");
-        const observer = new IntersectionObserver((entries, observer) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting){
-                    entry.target.src = entry.target.dataset.src;
-                    observer.unobserve(entry.target);
-                }
-            });
-        });
-        imageElements.forEach((image) => {
-            // observer.observe(image);
-            UIkit.img(image, {
-                loading: 'lazy',
-            });
-        });
+        const app = f('.app');
+        const footer__navbar = f('.footer__navbar');
+        const danhmucchitiet__fillter__section = f('.danhmucchitiet__fillter__section');
+
+        if (footer__navbar){
+            let h = footer__navbar.offsetHeight + 'px';
+            app.style.paddingBottom = h;
+            console.log('paddingBottom App', h);
+        }
+
+        if (danhmucchitiet__fillter__section) {
+            let h = danhmucchitiet__fillter__section.offsetHeight + 'px';
+            app.style.paddingBottom = h;
+            console.log('paddingBottom App', h);
+        }
     },
     start: function () {
         this.render();
     }
 }
 
-window.addEventListener("load", ()=>{
-    console.log("page is fully loaded");
-    app.start();
-})
+window.addEventListener('DOMContentLoaded', (event) => {
+    console.log('DOM fully loaded and parsed');
+    footer.start();
+});

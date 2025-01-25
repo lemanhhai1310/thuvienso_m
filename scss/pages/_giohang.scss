@@ -1,0 +1,16 @@
+.giohang{
+  &__btn{
+    display: inline-flex;
+    align-items: center;
+    &__item{
+      width: 32px;
+      height: 32px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      &:nth-child(n+2){
+        border-left: 1px solid #E5E5E5;
+      }
+    }
+  }
+}

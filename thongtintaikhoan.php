@@ -150,11 +150,13 @@
         </div>
     </div>
 </div>
-<div class="uk-container uk-container-expand uk-margin-remove-left uk-margin-remove-right danhmucchitiet__fillter__section">
+<div class="uk-container uk-container-expand uk-margin-remove-left uk-margin-remove-right danhmucchitiet__fillter__section uk-position-bottom uk-position-fixed">
     <div class="uk-section-xsmall" style="padding: 16px 0;">
         <div class="uk-child-width-expand uk-grid uk-grid-8" uk-grid>
             <div>
-                <button class="danhmucchitiet__fillter__btn danhmucchitiet__fillter__btn--submit uk-button uk-width uk-border-pill fz-16px be-vietnam-pro-600">Lưu thay đổi</button>
+                <button class="danhmucchitiet__fillter__btn danhmucchitiet__fillter__btn--submit uk-button uk-width uk-border-pill fz-16px be-vietnam-pro-600">
+                    Lưu thay đổi
+                </button>
             </div>
         </div>
     </div>

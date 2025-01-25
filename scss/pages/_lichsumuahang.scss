@@ -14,9 +14,18 @@
     @extend .rounded-6px;
     line-height: 30px;
     @extend .bg-F7F7F7;
+    display: inline-flex;
+    align-items: center;
+    gap: 2px;
+    svg{
+      display: none;
+    }
     .uk-active> &{
       color: var(--color);
       background: var(--bg);
+      svg{
+        display: inline-block;
+      }
     }
   }
   &__label{

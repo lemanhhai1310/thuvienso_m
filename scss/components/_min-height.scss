@@ -1,5 +1,6 @@
 $sizes:(
         '60': 60px,
+        '119': 119px,
 );
 @each $name,$value in $sizes {
   .mh-#{$name} {

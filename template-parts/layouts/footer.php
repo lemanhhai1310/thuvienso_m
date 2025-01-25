@@ -56,28 +56,7 @@
         </div>
     </nav>
     <script>
-        const f = document.querySelector.bind(document);
-        const ff = document.querySelectorAll.bind(document);
-        const footer = {
-            render: function () {
-                const app = f('.app');
-                const footer__navbar = f('.footer__navbar');
 
-                if (footer__navbar){
-                    let h = footer__navbar.offsetHeight + 'px';
-                    app.style.paddingBottom = h;
-                    console.log('paddingBottom App', h);
-                }
-            },
-            start: function () {
-                this.render();
-            }
-        }
-
-        window.addEventListener('DOMContentLoaded', (event) => {
-            console.log('DOM fully loaded and parsed');
-            footer.start();
-        });
     </script>
 <?php endif; ?>
 </div>

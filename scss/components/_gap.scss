@@ -1,5 +1,6 @@
 $sizes:(
         '0': 0px,
+        '4': 4px,
         '8': 8px,
 );
 @each $name,$value in $sizes {
