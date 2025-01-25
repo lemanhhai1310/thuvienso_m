@@ -1304,6 +1304,7 @@
   transform: translateY(-50%);
 }
 .danhmucchitiet__fillter__section {
+  z-index: 2;
   border-radius: 28px 28px 0px 0px;
   background: var(--Color-Neutral-White, #FEFEFE);
   /* Shadow 1 */

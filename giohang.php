@@ -49,7 +49,7 @@
                 </div>
             </div>
             <div class="uk-width-auto">
-                <a href="">
+                <a href="thongtinnhanhang.php">
                     <span class="icons__24px icons__24px--arrows-right"></span>
                 </a>
             </div>
