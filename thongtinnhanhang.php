@@ -28,7 +28,7 @@
             <div class="uk-margin">
                 <div class="uk-grid uk-grid-12 uk-flex-middle" uk-grid>
                     <div class="uk-width-auto">
-                        <span class="icons__24px icons__24px--location-3"></span>
+                        <span class="icons__24px icons__24px--location"></span>
                     </div>
                     <div class="uk-width-expand">
                         <div class="be-vietnam-pro-600 fz-14px text-000">Thông tin nhận hàng</div>

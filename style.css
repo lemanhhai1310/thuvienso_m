@@ -980,6 +980,9 @@
 .icons__24px--arrows-right {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='24' viewBox='0 0 25 24' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M10.0315 6.41438C9.70806 6.67313 9.65562 7.1451 9.91438 7.46855L13.5396 12L9.91438 16.5315C9.65562 16.855 9.70806 17.3269 10.0315 17.5857C10.355 17.8444 10.8269 17.792 11.0857 17.4685L15.0857 12.4685C15.3048 12.1946 15.3048 11.8054 15.0857 11.5315L11.0857 6.53151C10.8269 6.20806 10.355 6.15562 10.0315 6.41438Z' fill='%2328303F'/%3E%3C/svg%3E");
 }
+.icons__24px--location {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='19' height='20' viewBox='0 0 19 20' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M9.5 20C12.875 20 18.5 13.7981 18.5 8.88889C18.5 3.97969 14.4706 0 9.5 0C4.52944 0 0.5 3.97969 0.5 8.88889C0.5 13.7981 6.125 20 9.5 20ZM9.5 12C11.1569 12 12.5 10.6569 12.5 9C12.5 7.34315 11.1569 6 9.5 6C7.84315 6 6.5 7.34315 6.5 9C6.5 10.6569 7.84315 12 9.5 12Z' fill='%23966412'/%3E%3C/svg%3E");
+}
 
 .header__navbar {
   border-bottom: 1px solid #E6E6E6;
