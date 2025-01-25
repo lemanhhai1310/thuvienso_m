@@ -4,7 +4,7 @@
     align-items: center;
     &__item{
       width: 32px;
-      height: 32px;
+      height: 30px;
       display: inline-flex;
       align-items: center;
       justify-content: center;
@@ -12,5 +12,18 @@
         border-left: 1px solid #E5E5E5;
       }
     }
+  }
+  &__checkbox{
+    width: 24px;
+    height: 24px;
+    border-color: #999;
+    &:checked{
+      background-color: #966412 !important;
+    }
+  }
+  &__btnSelect{
+    text-transform: inherit;
+    line-height: 30px;
+    padding: 0 10px;
   }
 }

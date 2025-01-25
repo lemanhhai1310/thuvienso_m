@@ -141,7 +141,7 @@
         <?php for ($i = 0; $i < 10; $i++) { ?>
             <div class="uk-grid uk-margin uk-grid-8 uk-flex-middle" uk-grid>
                 <div class="uk-width-auto">
-                    <label><input class="uk-checkbox" type="checkbox"></label>
+                    <label><input class="uk-checkbox giohang__checkbox rounded-4px" type="checkbox"></label>
                 </div>
                 <div class="uk-width-expand">
                     <div class="padding-12 rounded-10px bd-1-E6E6E6 uk-position-relative">
@@ -158,6 +158,7 @@
                                 <div class="fz-12px be-vietnam-pro-500 lh-133 text-2A2928 item-2px">Phong thuỷ ứng dụng</div>
                                 <div class="item-6px fz-12px be-vietnam-pro-600 lh-133 text-0CB0A7">590.000 VND</div>
                                 <div class="item-8px">
+                                    <?php if ($i==0): ?>
                                     <div class="giohang__btn bd-1-E5E5E5 rounded-8px">
                                         <div class="giohang__btn__item">
                                             <span class="icons__16px icons__16px--minus"></span>
@@ -169,6 +170,21 @@
                                             <span class="icons__16px icons__16px--plus"></span>
                                         </div>
                                     </div>
+                                    <?php else: ?>
+                                        <div uk-form-custom="target: > * > span:first-child">
+                                            <select aria-label="Custom controls">
+                                                <option value="">1 tháng</option>
+                                                <option value="1">Option 01</option>
+                                                <option value="2">Option 02</option>
+                                                <option value="3">Option 03</option>
+                                                <option value="4">Option 04</option>
+                                            </select>
+                                            <button class="giohang__btnSelect fz-12px be-vietnam-pro-500 text-28303F uk-button uk-button-default uk-button-small bd-1-E5E5E5 rounded-8px" type="button" tabindex="-1">
+                                                <span></span>
+                                                <span uk-icon="icon: chevron-down"></span>
+                                            </button>
+                                        </div>
+                                    <?php endif; ?>
                                 </div>
                             </div>
                         </div>

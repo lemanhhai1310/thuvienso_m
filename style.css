@@ -589,6 +589,10 @@
   color: #3f4254;
 }
 
+.text-28303F {
+  color: #28303f;
+}
+
 .item-2px:nth-child(n+2) {
   margin-top: 2px;
 }
@@ -1462,13 +1466,26 @@
 }
 .giohang__btn__item {
   width: 32px;
-  height: 32px;
+  height: 30px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
 }
 .giohang__btn__item:nth-child(n+2) {
   border-left: 1px solid #E5E5E5;
+}
+.giohang__checkbox {
+  width: 24px;
+  height: 24px;
+  border-color: #999;
+}
+.giohang__checkbox:checked {
+  background-color: #966412 !important;
+}
+.giohang__btnSelect {
+  text-transform: inherit;
+  line-height: 30px;
+  padding: 0 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
