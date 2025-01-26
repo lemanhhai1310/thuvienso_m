@@ -1,4 +1,4 @@
-<?php $data["title"] = "Đăng ký"; ?>
+<?php $data["title"] = "Xác thực Email"; ?>
 <?php $bodyClass = '' ?>
 <?php $isNav = false ?>
 <?php $isHeader = false ?>
