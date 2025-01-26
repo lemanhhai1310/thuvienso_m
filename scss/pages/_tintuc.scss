@@ -1,0 +1,28 @@
+.tintuc{
+  &__card{
+    &__overlay{
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.80) 66.3%);
+    }
+    &__label{
+      border-radius: 0px 20px;
+      background: rgba(0, 0, 0, 0.60);
+
+
+      span{
+        backdrop-filter: blur(1.5px);
+        background: var(--brand-color, linear-gradient(284deg, #FFC01F -30.8%, #FFF38C 155.96%));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  }
+  &__item{
+    &:nth-child(n+2){
+      $x:16px;
+      margin-top: #{$x};
+      padding-top: #{$x};
+      border-top: 1px solid var(--Divider, #EBE9E3);
+    }
+  }
+}
