@@ -1,0 +1,10 @@
+.tintuc-detail{
+  &__article{
+    >*{
+      margin-bottom: 0;
+      &:nth-child(n+2){
+        margin-top: 12px;
+      }
+    }
+  }
+}
