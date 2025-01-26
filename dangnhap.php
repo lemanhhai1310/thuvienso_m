@@ -99,7 +99,7 @@
         <div class="uk-child-width-expand uk-grid uk-grid-8" uk-grid>
             <div>
                 <button class="danhmucchitiet__fillter__btn item-28px danhmucchitiet__fillter__btn--submit uk-button uk-width uk-border-pill fz-16px be-vietnam-pro-600 uk-flex uk-flex-center uk-flex-middle gap-4">
-                    Đăng ký
+                    Đăng nhập
                 </button>
                 <div class="dangky__divider uk-position-relative bg-F6F6F6 item-15px">
                     <span class="uk-position-center uk-position-z-index bg-FFF">Hoặc</span>
@@ -116,7 +116,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="uk-text-center item-24px fz-14px text-966412"><span class="be-vietnam-pro-500 text-6B6B6B">Bạn đã có tài khoản?</span> <a href="" class="be-vietnam-pro-600 uk-link-toggle">Đăng nhập</a></div>
+                <div class="uk-text-center item-24px fz-14px text-966412"><span class="be-vietnam-pro-500 text-6B6B6B">Bạn chưa có tài khoản?</span> <a href="" class="be-vietnam-pro-600 uk-link-toggle">Đăng ký</a></div>
             </div>
         </div>
     </div>
