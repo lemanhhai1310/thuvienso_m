@@ -28,7 +28,7 @@
   font-style: normal;
 }
 
-.be-vietnam-pro-600, .lichsunaptien__tab > li > a, .lichsumuahang__label, .lichsumuahang__btn, .thongtintaikhoan__input, .danhmucchitiet__search__input, .header__navbar__icon--cart[data-count]:before {
+.be-vietnam-pro-600, .dangky-success__checkbox:checked ~ .dangky-success__item, .lichsunaptien__tab > li > a, .lichsumuahang__label, .lichsumuahang__btn, .thongtintaikhoan__input, .danhmucchitiet__search__input, .header__navbar__icon--cart[data-count]:before {
   font-family: "Be Vietnam Pro", sans-serif;
   font-weight: 600;
   font-style: normal;
@@ -533,7 +533,7 @@
   color: #999999;
 }
 
-.text-FFF, .danhmucchitiet__fillter__dinhdang__checkbox:checked ~ .danhmucchitiet__fillter__dinhdang__label, .header__navbar__icon--cart[data-count]:before {
+.text-FFF, .dangky-success__checkbox:checked ~ .dangky-success__item, .danhmucchitiet__fillter__dinhdang__checkbox:checked ~ .danhmucchitiet__fillter__dinhdang__label, .header__navbar__icon--cart[data-count]:before {
   color: white;
 }
 
@@ -623,6 +623,10 @@
 
 .item-8px:nth-child(n+2) {
   margin-top: 8px;
+}
+
+.item-9px:nth-child(n+2) {
+  margin-top: 9px;
 }
 
 .item-10px:nth-child(n+2) {
@@ -867,6 +871,18 @@
   background: #FCD9E2;
 }
 
+.bg-E6E6E6 {
+  background: #E6E6E6;
+}
+
+.bg-E40362, .dangky-success__checkbox:checked ~ .dangky-success__item {
+  background: #E40362;
+}
+
+.mh-38 {
+  min-height: 38px !important;
+}
+
 .mh-60, .footer__nav__a, .header__navbar .uk-navbar-nav > li > a, .header__navbar .uk-navbar-item, .header__navbar .uk-navbar-toggle {
   min-height: 60px !important;
 }
@@ -889,6 +905,10 @@
 
 .padding-12 {
   padding: 12px;
+}
+
+.padding-0-12 {
+  padding: 0 12px;
 }
 
 .padding-6-12 {
