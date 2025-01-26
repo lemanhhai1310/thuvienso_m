@@ -104,7 +104,7 @@
                 <div class="dangky__divider uk-position-relative bg-F6F6F6 item-15px">
                     <span class="uk-position-center uk-position-z-index bg-FFF">Hoặc</span>
                 </div>
-                <div class="uk-child-width-expand item-15px uk-grid" uk-grid>
+                <div class="uk-child-width-expand item-15px uk-grid uk-grid-12" uk-grid>
                     <div>
                         <a href="" class="uk-width uk-border-pill dangky__btn uk-flex uk-flex-middle uk-flex-center bg-F6F6F6">
                             <span class="icons__20px icons__20px--login-google"></span>
