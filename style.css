@@ -28,7 +28,7 @@
   font-style: normal;
 }
 
-.be-vietnam-pro-600, .dangky-success__checkbox:checked ~ .dangky-success__item, .lichsunaptien__tab > li > a, .lichsumuahang__label, .lichsumuahang__btn, .thongtintaikhoan__input, .danhmucchitiet__search__input, .header__navbar__icon--cart[data-count]:before {
+.be-vietnam-pro-600, .lichsunaptien__tab > li > a, .lichsumuahang__label, .lichsumuahang__btn, .thongtintaikhoan__input, .danhmucchitiet__search__input, .header__navbar__icon--cart[data-count]:before {
   font-family: "Be Vietnam Pro", sans-serif;
   font-weight: 600;
   font-style: normal;
@@ -605,6 +605,18 @@
   color: #111827;
 }
 
+.text-45484F {
+  color: #45484f;
+}
+
+.text-EB4143 {
+  color: #eb4143;
+}
+
+.text-61646B {
+  color: #61646b;
+}
+
 .item-2px:nth-child(n+2) {
   margin-top: 2px;
 }
@@ -673,6 +685,10 @@
   margin-top: 40px;
 }
 
+.item-42px:nth-child(n+2) {
+  margin-top: 42px;
+}
+
 .item-64px:nth-child(n+2) {
   margin-top: 64px;
 }
@@ -690,6 +706,11 @@
 .width-298px {
   max-width: 100%;
   width: 298px;
+}
+
+.width-326px {
+  max-width: 100%;
+  width: 326px;
 }
 
 .width-414px {
@@ -877,6 +898,10 @@
 
 .bg-E40362, .dangky-success__checkbox:checked ~ .dangky-success__item {
   background: #E40362;
+}
+
+.bg-F7F7F8 {
+  background: #F7F7F8;
 }
 
 .mh-38 {
@@ -1557,6 +1582,11 @@
 }
 .dangky__divider span {
   padding: 0 12px;
+}
+
+.xacthucmail__number {
+  width: 44px;
+  height: 44px;
 }
 
 /*# sourceMappingURL=style.css.map */

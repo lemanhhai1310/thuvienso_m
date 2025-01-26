@@ -3,7 +3,7 @@
     .dangky-success__checkbox:checked ~ &{
       @extend .bg-E40362;
       @extend .text-FFF;
-      @extend .be-vietnam-pro-600;
+      //@extend .be-vietnam-pro-600;
     }
   }
   &__checkbox{
