@@ -1,0 +1,11 @@
+.tacgia{
+  &__card{
+    &__overlay{
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.40) 100%);
+    }
+    &__position-small{
+      --uk-position-margin-offset: 12px;
+      margin: var(--uk-position-margin-offset);
+    }
+  }
+}
