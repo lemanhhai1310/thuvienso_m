@@ -1,0 +1,11 @@
+.dangky{
+  &__btn{
+    min-height: 44px;
+  }
+  &__divider{
+    height: 1px;
+    span{
+      padding: 0 12px;
+    }
+  }
+}
