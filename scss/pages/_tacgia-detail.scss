@@ -1,0 +1,38 @@
+.tacgia-detail{
+  &__tabItem{
+    text-transform: inherit;
+    @extend .fz-12px;
+    @extend .be-vietnam-pro-600;
+    @extend .text-999;
+    background-color: transparent;
+    padding: 0 20px;
+    .uk-active> &{
+      border-bottom-width: 1px;
+      border-bottom-style: solid;
+      border-bottom-color: #0CB0A7;
+      @extend .text-000;
+    }
+  }
+  &__table{
+    tr{
+      >*{
+        $x:7px;
+        padding-top: #{$x};
+        padding-bottom: #{$x};
+        @extend .fz-12px;
+        @extend .be-vietnam-pro-500;
+        @extend .lh-133;
+      }
+      th{
+        padding-left: 0;
+        text-transform: inherit;
+        white-space: nowrap;
+        @extend .text-6B6B6B;
+        vertical-align: top;
+      }
+      td{
+        @extend .text-2A2928;
+      }
+    }
+  }
+}

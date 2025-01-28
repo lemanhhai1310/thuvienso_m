@@ -22,13 +22,13 @@
   font-style: normal;
 }
 
-.be-vietnam-pro-500, .thongtintaikhoan__label, .taikhoan__nav > li > a, .danhmucchitiet__fillter__sort__btn, .footer__nav__subtitle {
+.be-vietnam-pro-500, .tacgia-detail__table tr > *, .thongtintaikhoan__label, .taikhoan__nav > li > a, .danhmucchitiet__fillter__sort__btn, .footer__nav__subtitle {
   font-family: "Be Vietnam Pro", sans-serif;
   font-weight: 500;
   font-style: normal;
 }
 
-.be-vietnam-pro-600, .lichsunaptien__tab > li > a, .lichsumuahang__label, .lichsumuahang__btn, .thongtintaikhoan__input, .danhmucchitiet__search__input, .header__navbar__icon--cart[data-count]:before {
+.be-vietnam-pro-600, .tacgia-detail__tabItem, .lichsunaptien__tab > li > a, .lichsumuahang__label, .lichsumuahang__btn, .thongtintaikhoan__input, .danhmucchitiet__search__input, .header__navbar__icon--cart[data-count]:before {
   font-family: "Be Vietnam Pro", sans-serif;
   font-weight: 600;
   font-style: normal;
@@ -472,7 +472,7 @@
   font-size: 11px;
 }
 
-.fz-12px, .lichsunaptien__tab > li > a, .lichsumuahang__btn {
+.fz-12px, .tacgia-detail__table tr > *, .tacgia-detail__tabItem, .lichsunaptien__tab > li > a, .lichsumuahang__btn {
   font-size: 12px;
 }
 
@@ -547,7 +547,7 @@
   overflow: hidden;
 }
 
-.text-000, .lichsunaptien__tab > li.uk-active > a, .timkiemdonhang__searchInput, .home__banner__btn, .home__deal__btn:hover {
+.text-000, .uk-active > .tacgia-detail__tabItem, .lichsunaptien__tab > li.uk-active > a, .timkiemdonhang__searchInput, .home__banner__btn, .home__deal__btn:hover {
   color: black;
 }
 
@@ -587,7 +587,7 @@
   color: #444444;
 }
 
-.text-999, .lichsunaptien__tab > li > a, .lichsumuahang__btn, .home__linkAll:hover {
+.text-999, .tacgia-detail__tabItem, .lichsunaptien__tab > li > a, .lichsumuahang__btn, .home__linkAll:hover {
   color: #999999;
 }
 
@@ -635,7 +635,7 @@
   color: #4b5563;
 }
 
-.text-2A2928, .danhmucchitiet__fillter__btn--reset {
+.text-2A2928, .tacgia-detail__table tr td, .danhmucchitiet__fillter__btn--reset {
   color: #2a2928;
 }
 
@@ -655,7 +655,7 @@
   color: #28303f;
 }
 
-.text-6B6B6B {
+.text-6B6B6B, .tacgia-detail__table tr th {
   color: #6b6b6b;
 }
 
@@ -867,7 +867,7 @@
   line-height: 1.2857;
 }
 
-.lh-133 {
+.lh-133, .tacgia-detail__table tr > * {
   line-height: 1.33333;
 }
 
@@ -1094,6 +1094,12 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+.icons__24px--book {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M11.25 5.37808C9.13095 3.92228 6.18953 3.25933 3.99433 3.01127C2.89642 2.88721 2 3.80402 2 4.93518V16.2C2 17.3311 2.89642 18.2483 3.99433 18.3723C6.18953 18.6204 9.13095 19.2833 11.25 20.7391V5.37808ZM12.75 20.7391C14.869 19.2833 17.8105 18.6204 20.0057 18.3723C21.1036 18.2483 22 17.3311 22 16.2V4.93518C22 3.80402 21.1036 2.88721 20.0057 3.01127C17.8105 3.25933 14.869 3.92228 12.75 5.37808V20.7391ZM4.25884 8.13986C4.32223 7.73052 4.70545 7.45008 5.11478 7.51347C6.41756 7.71523 7.88471 8.05247 9.27051 8.58836C9.65684 8.73775 9.84892 9.17205 9.69952 9.55838C9.55012 9.94471 9.11583 10.1368 8.7295 9.98739C7.47085 9.50067 6.11399 9.1861 4.88522 8.9958C4.47588 8.93241 4.19544 8.54919 4.25884 8.13986ZM5.11478 11.5135C4.70545 11.4501 4.32223 11.7305 4.25884 12.1399C4.19544 12.5492 4.47588 12.9324 4.88522 12.9958C5.50446 13.0917 6.15813 13.2195 6.81653 13.3856C7.21815 13.4869 7.62588 13.2435 7.72721 12.8418C7.82854 12.4402 7.5851 12.0325 7.18347 11.9311C6.47447 11.7523 5.77452 11.6156 5.11478 11.5135Z' fill='%23966412'/%3E%3C/svg%3E");
+}
+.icons__24px--user-rectangle {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M16 0H4C1.79086 0 0 1.79086 0 4V16C0 17.8642 1.27532 19.4306 3.00111 19.8743C3.32039 19.9563 3.6551 20 4 20H16C16.3449 20 16.6796 19.9563 16.9989 19.8743C18.7247 19.4306 20 17.8642 20 16V4C20 1.79086 18.2091 0 16 0ZM13 7C13 5.34315 11.6569 4 10 4C8.34315 4 7 5.34315 7 7C7 8.65685 8.34315 10 10 10C11.6569 10 13 8.65685 13 7ZM5.15257 15.0155C5.70085 13.2824 7.66322 12 10 12C12.3368 12 14.2991 13.2824 14.8474 15.0155C15.014 15.5421 14.5523 16 14 16H6C5.44772 16 4.98599 15.5421 5.15257 15.0155Z' fill='%23966412'/%3E%3C/svg%3E");
+}
 .icons__24px--user-circle-add {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='24' viewBox='0 0 25 24' fill='none'%3E%3Cpath d='M7.5 15C10.4458 13.6802 12.1997 13.6532 15.5 15' stroke='%234B5563' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='3' cy='3' r='3' transform='matrix(1 0 0 -1 8.5 11)' stroke='%234B5563' stroke-width='1.5' stroke-linejoin='round'/%3E%3Cpath d='M20.277 13C20.4229 12.3568 20.5 11.6874 20.5 11C20.5 6.02944 16.4706 2 11.5 2C6.52944 2 2.5 6.02944 2.5 11C2.5 15.9706 6.52944 20 11.5 20C12.1874 20 12.8568 19.9229 13.5 19.777' stroke='%234B5563' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M18.5 16V20' stroke='%234B5563' stroke-width='1.5' stroke-linecap='round'/%3E%3Cpath d='M20.5 18L16.5 18' stroke='%234B5563' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E");
 }
@@ -1138,6 +1144,9 @@
 }
 .icons__24px--location {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='19' height='20' viewBox='0 0 19 20' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M9.5 20C12.875 20 18.5 13.7981 18.5 8.88889C18.5 3.97969 14.4706 0 9.5 0C4.52944 0 0.5 3.97969 0.5 8.88889C0.5 13.7981 6.125 20 9.5 20ZM9.5 12C11.1569 12 12.5 10.6569 12.5 9C12.5 7.34315 11.1569 6 9.5 6C7.84315 6 6.5 7.34315 6.5 9C6.5 10.6569 7.84315 12 9.5 12Z' fill='%23966412'/%3E%3C/svg%3E");
+}
+.icons__24px--filter {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M18.8188 2H5.18117C3.442 2 2.40466 3.91555 3.36937 5.34564L9.09107 12.8274C9.56799 13.5344 9.82249 14.3651 9.82249 15.2148V20.9219C9.82249 21.8805 10.9952 22.3605 11.6811 21.6827L13.8586 19.5307C14.0628 19.329 14.1775 19.0553 14.1775 18.7699V15.2148C14.1775 14.3651 14.432 13.5344 14.9089 12.8274L20.6306 5.34564C21.5953 3.91555 20.558 2 18.8188 2Z' stroke='%23966412' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
 }
 
 .header__navbar {
@@ -1696,6 +1705,27 @@
 .tacgia__card__position-small {
   --uk-position-margin-offset: 12px;
   margin: var(--uk-position-margin-offset);
+}
+
+.tacgia-detail__tabItem {
+  text-transform: inherit;
+  background-color: transparent;
+  padding: 0 20px;
+}
+.uk-active > .tacgia-detail__tabItem {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #0CB0A7;
+}
+.tacgia-detail__table tr > * {
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+.tacgia-detail__table tr th {
+  padding-left: 0;
+  text-transform: inherit;
+  white-space: nowrap;
+  vertical-align: top;
 }
 
 /*# sourceMappingURL=style.css.map */
