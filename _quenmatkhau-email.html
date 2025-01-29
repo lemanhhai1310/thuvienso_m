@@ -1,0 +1,288 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="REFRESH" content="1800"/>
+    <title>Quên mật khẩu - Thuvienso App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="style.css?v=1738111719">
+
+    <!--JS-->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.13/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.13/dist/js/uikit-icons.min.js"></script>
+    <script src="js/app.js?v=1738111719"></script>
+
+    <style>
+        .be-vietnam-pro-100 {
+            font-family: "Be Vietnam Pro", sans-serif;
+            font-weight: 100;
+            font-style: normal;
+        }
+
+        .be-vietnam-pro-200 {
+            font-family: "Be Vietnam Pro", sans-serif;
+            font-weight: 200;
+            font-style: normal;
+        }
+
+        .be-vietnam-pro-300 {
+            font-family: "Be Vietnam Pro", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+        }
+
+        .be-vietnam-pro-400 {
+            font-family: "Be Vietnam Pro", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .be-vietnam-pro-500 {
+            font-family: "Be Vietnam Pro", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+        }
+
+        .be-vietnam-pro-600 {
+            font-family: "Be Vietnam Pro", sans-serif;
+            font-weight: 600;
+            font-style: normal;
+        }
+
+        .be-vietnam-pro-700 {
+            font-family: "Be Vietnam Pro", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        .be-vietnam-pro-800 {
+            font-family: "Be Vietnam Pro", sans-serif;
+            font-weight: 800;
+            font-style: normal;
+        }
+
+        .be-vietnam-pro-900 {
+            font-family: "Be Vietnam Pro", sans-serif;
+            font-weight: 900;
+            font-style: normal;
+        }
+
+        .be-vietnam-pro-100-italic {
+            font-family: "Be Vietnam Pro", sans-serif;
+            font-weight: 100;
+            font-style: italic;
+        }
+
+        .be-vietnam-pro-200-italic {
+            font-family: "Be Vietnam Pro", sans-serif;
+            font-weight: 200;
+            font-style: italic;
+        }
+
+        .be-vietnam-pro-300-italic {
+            font-family: "Be Vietnam Pro", sans-serif;
+            font-weight: 300;
+            font-style: italic;
+        }
+
+        .be-vietnam-pro-400-italic {
+            font-family: "Be Vietnam Pro", sans-serif;
+            font-weight: 400;
+            font-style: italic;
+        }
+
+        .be-vietnam-pro-500-italic {
+            font-family: "Be Vietnam Pro", sans-serif;
+            font-weight: 500;
+            font-style: italic;
+        }
+
+        .be-vietnam-pro-600-italic {
+            font-family: "Be Vietnam Pro", sans-serif;
+            font-weight: 600;
+            font-style: italic;
+        }
+
+        .be-vietnam-pro-700-italic {
+            font-family: "Be Vietnam Pro", sans-serif;
+            font-weight: 700;
+            font-style: italic;
+        }
+
+        .be-vietnam-pro-800-italic {
+            font-family: "Be Vietnam Pro", sans-serif;
+            font-weight: 800;
+            font-style: italic;
+        }
+
+        .be-vietnam-pro-900-italic {
+            font-family: "Be Vietnam Pro", sans-serif;
+            font-weight: 900;
+            font-style: italic;
+        }
+
+    </style>
+</head>
+<body class="uk-background-muted">
+<!--app-->
+<div id="app" class="app uk-background-default width-1024px uk-box-shadow-small uk-margin-auto uk-height-viewport uk-offcanvas-content uk-overflow-hidden uk-position-relative">
+    <nav class="header__navbar uk-navbar-container" style="border:none;" uk-sticky="end: !.app; offset: 0; show-on-up: false; animation: uk-animation-slide-top">
+        <div class="uk-container">
+            <div uk-navbar>
+                <div class="uk-navbar-left">
+                    <a href="." class="uk-navbar-item">
+                        <span class="header__navbar__icon header__navbar__icon--arrow-left"></span>
+                    </a>
+                </div>
+                <div class="uk-navbar-center">
+                    <div class="uk-navbar-item">
+                        <h1 class="uk-margin-remove text-181C32 fz-16px be-vietnam-pro-600 lh-125"></h1>
+                    </div>
+                </div>
+                <div class="uk-navbar-right">
+
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="uk-section-xsmall uk-overflow-auto">
+        <div class="uk-container">
+            <div class="uk-cover-container uk-background-secondary uk-flex-inline uk-light">
+                <h2 class="uk-position-center fz-16px be-vietnam-pro-600 lh-171">Logo</h2>
+                <canvas width="100" height="48"></canvas>
+            </div>
+            <div class="uk-margin-top">
+                <h1 class="uk-margin-remove be-vietnam-pro-600 lh-127 text-111827 fz-30px">Quên mật khẩu</h1>
+                <div class="item-12px fz-14px lh-142 text-4B5563">Đừng lo lắng! Nhập địa chỉ email của bạn để chúng tôi đặt lại mật khẩu cho bạn.</div>
+            </div>
+            <div class="item-24px uk-form-stacked">
+                <div class="uk-margin">
+                    <label class="thongtintaikhoan__label uk-form-label" for="form-stacked-email">Email <sup class="uk-text-danger">*</sup></label>
+                    <div class="uk-form-controls">
+                        <div class="uk-inline uk-width">
+                        <span class="thongtintaikhoan__icon uk-form-icon">
+                            <span class="icons__24px icons__24px--outline-mail"></span>
+                        </span>
+                            <input class="thongtintaikhoan__input uk-input" id="form-stacked-email" type="email" placeholder="Nhập địa chỉ email của bạn " value="" aria-label="Nhập địa chỉ email của bạn ">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="uk-container uk-container-expand uk-margin-remove-left uk-margin-remove-right danhmucchitiet__fillter__section uk-position-bottom uk-position-fixed">
+        <div class="uk-section-xsmall" style="padding: 16px 0;">
+            <div class="uk-child-width-expand uk-grid uk-grid-8" uk-grid>
+                <div>
+                    <button class="danhmucchitiet__fillter__btn item-28px danhmucchitiet__fillter__btn--submit uk-button uk-width uk-border-pill fz-16px be-vietnam-pro-600 uk-flex uk-flex-center uk-flex-middle gap-4">
+                        Đặt lại mật khẩu
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer uk-light">
+        <div class="footer__top bg-1B1B1B uk-section-small">
+            <div class="uk-container">
+                <div class="item-25px">
+                    <div class="uk-cover-container uk-flex-inline bg-FFF">
+                        <span class="fz-16px be-vietnam-pro-600 uk-position-center text-000">Logo</span>
+                        <canvas width="100" height="48"></canvas>
+                    </div>
+                    <div class="text-999 be-vietnam-pro-600 fz-14px lh-171 item-18px width-240px">
+                        91 Nguyen Chi Thanh, Lang Ha, Dong Da, Ha Noi
+                    </div>
+                    <div class="item-18px fz-12px be-vietnam-pro-600 lh-128"><a href="" style="text-decoration: underline">Hiển thị địa chỉ</a></div>
+                </div>
+                <div class="item-25px">
+                    <h4 class="uk-margin-remove fz-16px be-vietnam-pro-600 lh-125 uk-text-capitalize">Bán hàng</h4>
+                    <div class="item-14px fz-16px be-vietnam-pro-600 footer__top__hotline">+(84) - 1800 - 1234</div>
+                    <div class="item-14px text-999 be-vietnam-pro-600 fz-14px lh-171">
+                        Thứ 2 – Thứ 6: 9:00-20:00 <br>
+                        Thứ 7, Chủ nhật: 11:00 – 15:00
+                    </div>
+                    <h3 class="fz-18px text-FFF be-vietnam-pro-600 lh-133 item-14px">lienhe@abc.com</h3>
+                </div>
+                <div class="item-25px">
+                    <h4 class="uk-margin-remove fz-16px be-vietnam-pro-600 lh-125 uk-text-capitalize">Danh mục</h4>
+                    <ul class="footer__top__nav uk-nav uk-nav-default item-15px">
+                        <li><a href="#">Vè chúng tôi</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                        <li><a href="#">Sách yêu thích</a></li>
+                        <li><a href="#">Đăng nhập</a></li>
+                    </ul>
+                </div>
+                <div class="item-25px">
+                    <h4 class="uk-margin-remove fz-16px be-vietnam-pro-600 lh-125 uk-text-capitalize">Dịch vụ</h4>
+                    <ul class="footer__top__nav uk-nav uk-nav-default item-15px">
+                        <li><a href="#">Tìm kiếm sách</a></li>
+                        <li><a href="#">Cửa hàng</a></li>
+                        <li><a href="#">Sách mới trong tháng</a></li>
+                        <li><a href="#">Sách nói</a></li>
+                        <li><a href="#">Tài liệu số</a></li>
+                        <li><a href="#">Bài giảng điện tử</a></li>
+                    </ul>
+                </div>
+                <div class="item-25px">
+                    <h4 class="uk-margin-remove fz-16px be-vietnam-pro-600 lh-125 uk-text-capitalize">Danh mục</h4>
+                    <ul class="footer__top__nav uk-nav uk-nav-default item-15px">
+                        <li><a href="#">Hành động</a></li>
+                        <li><a href="#">Hài hước</a></li>
+                        <li><a href="#">Tình cảm</a></li>
+                        <li><a href="#">Kinh dị</a></li>
+                        <li><a href="#">Tất cả</a></li>
+                    </ul>
+                </div>
+                <figure class="item-16px uk-margin-remove-bottom">
+                    <a href=""><img src="images/image6318.png" alt=""></a>
+                </figure>
+                <div class="uk-grid uk-child-width-1-2 uk-grid-20 item-16px" uk-grid>
+                    <div>
+                        <a href="" class="uk-button rounded-8px bg-20232D padding-0-8 mh-49 uk-flex uk-flex-middle" style="text-transform: inherit">
+                            <div class="uk-grid uk-grid-8 uk-flex-middle" uk-grid>
+                                <div class="uk-width-auto">
+                                    <span class="icons__20px icons__20px--google-play"></span>
+                                </div>
+                                <div class="uk-width-expand uk-text-left">
+                                    <div class="fz-10px be-vietnam-pro-500 uk-text-uppercase" style="color: rgba(255, 255, 255, 0.55);line-height: normal;">Get it on</div>
+                                    <div class="fz-14px be-vietnam-pro-600 lh-142 text-FFF">Google Play</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="" class="uk-button rounded-8px bg-20232D padding-0-8 mh-49 uk-flex uk-flex-middle" style="text-transform: inherit">
+                            <div class="uk-grid uk-grid-8 uk-flex-middle" uk-grid>
+                                <div class="uk-width-auto">
+                                    <span class="icons__20px icons__20px--apple-logo"></span>
+                                </div>
+                                <div class="uk-width-expand uk-text-left">
+                                    <div class="fz-10px be-vietnam-pro-500 uk-text-uppercase" style="color: rgba(255, 255, 255, 0.55);line-height: normal;">Download on the</div>
+                                    <div class="fz-14px be-vietnam-pro-600 lh-142 text-FFF">App Store</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom bg-000 uk-section-xsmall uk-text-center">
+            <div class="uk-container">
+                <div class="fz-14px be-vietnam-pro-600 lh-171">Copyright © 2024 <span class="text-0CB0A7">Logo</span> . All rights reserved.</div>
+                <figure class="uk-margin-remove-bottom item-12px"><img src="images/footer_img.png" alt=""></figure>
+            </div>
+        </div>
+    </footer>
+</div>
+<!--/app-->
+</body>
+</html>
