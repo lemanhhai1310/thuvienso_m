@@ -2,6 +2,7 @@
 <?php $bodyClass = '' ?>
 <?php $isNav = false ?>
 <?php $isHeader = false ?>
+<?php $noFooter = true ?>
 <?php require "template-parts/layouts/header.php"; ?>
 <nav class="header__navbar uk-navbar-container" uk-sticky="end: !.app; offset: 0; show-on-up: false; animation: uk-animation-slide-top">
     <div class="uk-container">

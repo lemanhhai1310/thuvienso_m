@@ -2,6 +2,7 @@
 <?php $bodyClass = '' ?>
 <?php $isNav = false ?>
 <?php $isHeader = false ?>
+<?php $noFooter = true ?>
 <?php require "template-parts/layouts/header.php"; ?>
 <nav class="header__navbar uk-navbar-container" style="border:none;" uk-sticky="end: !.app; offset: 0; show-on-up: false; animation: uk-animation-slide-top">
     <div class="uk-container">
@@ -22,7 +23,7 @@
         </div>
     </div>
 </nav>
-<div class="uk-section-xsmall uk-overflow-auto">
+<div class="uk-section-xsmall uk-overflow-auto" uk-height-viewport="offset-top: true; offset-bottom: true">
     <div class="uk-container">
         <div class="uk-cover-container uk-background-secondary uk-flex-inline uk-light">
             <h2 class="uk-position-center fz-16px be-vietnam-pro-600 lh-171">Logo</h2>

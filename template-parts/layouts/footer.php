@@ -59,6 +59,10 @@
 
     </script>
 <?php endif; ?>
+
+<?php if (isset($noFooter) && $noFooter): ?>
+
+<?php else: ?>
 <footer class="footer uk-light">
     <div class="footer__top bg-1B1B1B uk-section-small">
         <div class="uk-container">
@@ -151,6 +155,7 @@
         </div>
     </div>
 </footer>
+<?php endif; ?>
 </div>
 <!--/app-->
 </body>
