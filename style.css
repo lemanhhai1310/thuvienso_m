@@ -28,7 +28,7 @@
   font-style: normal;
 }
 
-.be-vietnam-pro-600, .tacgia-detail__tabItem, .lichsunaptien__tab > li > a, .lichsumuahang__label, .lichsumuahang__btn, .thongtintaikhoan__input, .danhmucchitiet__search__input, .footer__top__nav > li > a, .header__navbar__icon--cart[data-count]:before {
+.be-vietnam-pro-600, .danhgia__tab > li > a, .tacgia-detail__tabItem, .lichsunaptien__tab > li > a, .lichsumuahang__label, .lichsumuahang__btn, .thongtintaikhoan__input, .danhmucchitiet__search__input, .footer__top__nav > li > a, .header__navbar__icon--cart[data-count]:before {
   font-family: "Be Vietnam Pro", sans-serif;
   font-weight: 600;
   font-style: normal;
@@ -530,7 +530,7 @@
   font-size: 11px;
 }
 
-.fz-12px, .tacgia-detail__table tr > *, .tacgia-detail__tabItem, .lichsunaptien__tab > li > a, .lichsumuahang__btn {
+.fz-12px, .danhgia__tab > li > a, .tacgia-detail__table tr > *, .tacgia-detail__tabItem, .lichsunaptien__tab > li > a, .lichsumuahang__btn {
   font-size: 12px;
 }
 
@@ -605,7 +605,7 @@
   overflow: hidden;
 }
 
-.text-000, .uk-active > .tacgia-detail__tabItem, .lichsunaptien__tab > li.uk-active > a, .timkiemdonhang__searchInput, .home__banner__btn, .home__deal__btn:hover {
+.text-000, .danhgia__tab > li.uk-active > a, .uk-active > .tacgia-detail__tabItem, .lichsunaptien__tab > li.uk-active > a, .timkiemdonhang__searchInput, .home__banner__btn, .home__deal__btn:hover {
   color: black;
 }
 
@@ -645,7 +645,7 @@
   color: #444444;
 }
 
-.text-999, .tacgia-detail__tabItem, .lichsunaptien__tab > li > a, .lichsumuahang__btn, .home__linkAll:hover, .footer__top__nav > li > a {
+.text-999, .danhgia__tab > li > a, .tacgia-detail__tabItem, .lichsunaptien__tab > li > a, .lichsumuahang__btn, .home__linkAll:hover, .footer__top__nav > li > a {
   color: #999999;
 }
 
@@ -1891,6 +1891,14 @@
   left: 0;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.danhgia__tab > li > a {
+  text-transform: inherit;
+  padding-bottom: 12px;
+}
+.danhgia__tab > li.uk-active > a {
+  border-color: #0CB0A7;
 }
 
 /*# sourceMappingURL=style.css.map */
