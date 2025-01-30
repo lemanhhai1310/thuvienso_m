@@ -1,0 +1,31 @@
+.chitietsach{
+  &__column{
+
+  }
+  &__item{
+    position: relative;
+    .chitietsach__column:first-child &{
+      border-bottom-right-radius: 0;
+      border-top-right-radius: 0;
+    }
+    .chitietsach__column:last-child &{
+      border-bottom-right-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+    .chitietsach__column:nth-child(n+2) &{
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      &:before{
+        content: "";
+        width: 1px;
+        height: 26px;
+        @extend .bg-E6E6E6;
+        display: flex;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}
