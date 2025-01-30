@@ -1,0 +1,223 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="REFRESH" content="1800"/>
+    <title>Viết đánh giá - Thuvienso App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="style.css?v=1738237896">
+
+    <!--JS-->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.13/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.13/dist/js/uikit-icons.min.js"></script>
+    <script src="js/app.js?v=1738237896"></script>
+
+    <style>
+        .be-vietnam-pro-100 {
+            font-family: "Be Vietnam Pro", sans-serif;
+            font-weight: 100;
+            font-style: normal;
+        }
+
+        .be-vietnam-pro-200 {
+            font-family: "Be Vietnam Pro", sans-serif;
+            font-weight: 200;
+            font-style: normal;
+        }
+
+        .be-vietnam-pro-300 {
+            font-family: "Be Vietnam Pro", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+        }
+
+        .be-vietnam-pro-400 {
+            font-family: "Be Vietnam Pro", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .be-vietnam-pro-500 {
+            font-family: "Be Vietnam Pro", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+        }
+
+        .be-vietnam-pro-600 {
+            font-family: "Be Vietnam Pro", sans-serif;
+            font-weight: 600;
+            font-style: normal;
+        }
+
+        .be-vietnam-pro-700 {
+            font-family: "Be Vietnam Pro", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        .be-vietnam-pro-800 {
+            font-family: "Be Vietnam Pro", sans-serif;
+            font-weight: 800;
+            font-style: normal;
+        }
+
+        .be-vietnam-pro-900 {
+            font-family: "Be Vietnam Pro", sans-serif;
+            font-weight: 900;
+            font-style: normal;
+        }
+
+        .be-vietnam-pro-100-italic {
+            font-family: "Be Vietnam Pro", sans-serif;
+            font-weight: 100;
+            font-style: italic;
+        }
+
+        .be-vietnam-pro-200-italic {
+            font-family: "Be Vietnam Pro", sans-serif;
+            font-weight: 200;
+            font-style: italic;
+        }
+
+        .be-vietnam-pro-300-italic {
+            font-family: "Be Vietnam Pro", sans-serif;
+            font-weight: 300;
+            font-style: italic;
+        }
+
+        .be-vietnam-pro-400-italic {
+            font-family: "Be Vietnam Pro", sans-serif;
+            font-weight: 400;
+            font-style: italic;
+        }
+
+        .be-vietnam-pro-500-italic {
+            font-family: "Be Vietnam Pro", sans-serif;
+            font-weight: 500;
+            font-style: italic;
+        }
+
+        .be-vietnam-pro-600-italic {
+            font-family: "Be Vietnam Pro", sans-serif;
+            font-weight: 600;
+            font-style: italic;
+        }
+
+        .be-vietnam-pro-700-italic {
+            font-family: "Be Vietnam Pro", sans-serif;
+            font-weight: 700;
+            font-style: italic;
+        }
+
+        .be-vietnam-pro-800-italic {
+            font-family: "Be Vietnam Pro", sans-serif;
+            font-weight: 800;
+            font-style: italic;
+        }
+
+        .be-vietnam-pro-900-italic {
+            font-family: "Be Vietnam Pro", sans-serif;
+            font-weight: 900;
+            font-style: italic;
+        }
+
+    </style>
+</head>
+<body class="uk-background-muted">
+<!--app-->
+<div id="app" class="app uk-background-default width-1024px uk-box-shadow-small uk-margin-auto uk-height-viewport uk-offcanvas-content uk-overflow-hidden uk-position-relative">
+    <nav class="header__navbar uk-navbar-container" uk-sticky="end: !.app; offset: 0; show-on-up: false; animation: uk-animation-slide-top">
+        <div class="uk-container">
+            <div uk-navbar>
+                <div class="uk-navbar-left">
+                    <a href="taikhoan.php" class="uk-navbar-item">
+                        <span class="header__navbar__icon header__navbar__icon--arrow-left"></span>
+                    </a>
+                </div>
+                <div class="uk-navbar-center">
+                    <div class="uk-navbar-item">
+                        <h1 class="uk-margin-remove text-181C32 fz-16px be-vietnam-pro-600 lh-125">Đánh giá</h1>
+                    </div>
+                </div>
+                <div class="uk-navbar-right">
+
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="uk-section-xsmall" uk-height-viewport="offset-top: true; offset-bottom: true">
+        <div class="uk-container">
+            <ul class="uk-child-width-expand danhgia__tab uk-tab" uk-tab>
+                <li><a href="#"><span class="lh-167">Độc giả đánh giá</span></a></li>
+                <li class="uk-active"><a href="#"><span class="lh-167">Viết đánh giá</span></a></li>
+            </ul>
+            <div class="uk-grid uk-grid-8 uk-flex-middle" uk-grid>
+                <div class="uk-width-auto">
+                    <div class="uk-cover-container rounded-4px">
+                        <img src="images/photo.jpg" alt="" uk-cover="">
+                        <canvas width="30" height="46"></canvas>
+                    </div>
+                </div>
+                <div class="uk-width-expand">
+                    <div class="line-clamp-1 fz-12px be-vietnam-pro-500 lh-133 text-2A2928">100 selected poems</div>
+                    <div class="item-4px text-999 fz-12px be-vietnam-pro-500 lh-133">Suzanne Casey</div>
+                </div>
+            </div>
+            <div class="uk-grid uk-grid-4 uk-flex-middle item-4px" uk-grid>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="45" height="44" viewBox="0 0 45 44" fill="none">
+                        <path d="M23 8L26.1432 17.6738H36.3148L28.0858 23.6525L31.229 33.3262L23 27.3475L14.771 33.3262L17.9142 23.6525L9.68521 17.6738H19.8568L23 8Z" fill="#FFCC00"/>
+                    </svg>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="45" height="44" viewBox="0 0 45 44" fill="none">
+                        <path d="M23 8L26.1432 17.6738H36.3148L28.0858 23.6525L31.229 33.3262L23 27.3475L14.771 33.3262L17.9142 23.6525L9.68521 17.6738H19.8568L23 8Z" fill="#FFCC00"/>
+                    </svg>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="45" height="44" viewBox="0 0 45 44" fill="none">
+                        <path d="M23 8L26.1432 17.6738H36.3148L28.0858 23.6525L31.229 33.3262L23 27.3475L14.771 33.3262L17.9142 23.6525L9.68521 17.6738H19.8568L23 8Z" fill="#FFCC00"/>
+                    </svg>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="45" height="44" viewBox="0 0 45 44" fill="none">
+                        <path d="M23 8L26.1432 17.6738H36.3148L28.0858 23.6525L31.229 33.3262L23 27.3475L14.771 33.3262L17.9142 23.6525L9.68521 17.6738H19.8568L23 8Z" fill="#FFCC00"/>
+                    </svg>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="45" height="44" viewBox="0 0 45 44" fill="none">
+                        <path d="M23 8L26.1432 17.6738H36.3148L28.0858 23.6525L31.229 33.3262L23 27.3475L14.771 33.3262L17.9142 23.6525L9.68521 17.6738H19.8568L23 8Z" fill="#FFCC00"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="item-6px">
+                <textarea class="uk-textarea bg-F6F6F6 rounded-16px fz-14px be-vietnam-pro-600 text-9A96AA" rows="5" placeholder="Hãy cho chúng mình một vài nhận xét và  ý kiến đóng góp từ bạn nha" aria-label="Hãy cho chúng mình một vài nhận xét và  ý kiến đóng góp từ bạn nha"></textarea>
+            </div>
+        </div>
+    </div>
+    <div class="uk-container uk-container-expand uk-margin-remove-left uk-margin-remove-right danhmucchitiet__fillter__section uk-position-bottom uk-position-fixed">
+        <div class="uk-section-xsmall" style="padding: 16px 0;">
+            <div class="uk-child-width-expand uk-grid uk-grid-8" uk-grid>
+                <div>
+                    <button class="danhmucchitiet__fillter__btn item-28px danhmucchitiet__fillter__btn--submit uk-button uk-width uk-border-pill fz-16px be-vietnam-pro-600 uk-flex uk-flex-center uk-flex-middle gap-4">
+                        Lưu
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<!--/app-->
+</body>
+</html>
