@@ -91,7 +91,7 @@
         <div class="uk-margin-top">
             <div class="uk-grid uk-grid-collapse uk-child-width-1-2 uk-flex-center uk-flex-middle" uk-grid>
                 <div class="chitietsach__column">
-                    <a class="bg-FFFCE8 padding-12 uk-flex uk-width rounded-10px chitietsach__item">
+                    <a href="#offcanvas-overlay-fillter" uk-toggle class="bg-FFFCE8 padding-12 uk-flex uk-width rounded-10px chitietsach__item uk-link-toggle">
                         <div class="uk-width">
                             <div class="uk-grid uk-grid-8" uk-grid>
                                 <div class="uk-width-expand">
@@ -116,7 +116,7 @@
                     </a>
                 </div>
                 <div class="chitietsach__column">
-                    <a class="bg-FFFCE8 padding-12 uk-flex uk-width rounded-10px chitietsach__item">
+                    <a href="#offcanvas-overlay-fillter" uk-toggle class="bg-FFFCE8 padding-12 uk-flex uk-width rounded-10px chitietsach__item uk-link-toggle">
                         <div class="uk-width">
                             <div class="uk-grid uk-grid-8" uk-grid>
                                 <div class="uk-width-expand">
@@ -770,4 +770,43 @@
         </div>
     </div>
 </div>
+
+<div id="offcanvas-overlay-fillter" class="danhmucchitiet__offcanvas" uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar danhmucchitiet__offcanvas__bar uk-flex uk-flex-column">
+        <div class="uk-container uk-container-expand uk-margin-remove-left uk-margin-remove-right">
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+            <h3 class="uk-text-center fz-16px be-vietnam-pro-600 lh-125 text-181C32 uk-margin-remove">Đọc thử</h3>
+        </div>
+        <div class="uk-flex-auto uk-overflow-auto uk-section-xsmall item-20px uk-container uk-container-expand uk-margin-remove-left uk-margin-remove-right">
+            <div class="uk-grid-8 uk-grid uk-child-width item-12px" uk-grid>
+                <?php
+                $data = [
+                    'Ebook',
+                    'Epub',
+                ];
+                foreach ($data as $k=>$v): ?>
+                    <label>
+                        <input class="danhmucchitiet__fillter__dinhdang__checkbox uk-checkbox uk-hidden" type="checkbox">
+                        <div class="danhmucchitiet__fillter__dinhdang__label uk-border-pill fz-14px be-vietnam-pro-500 uk-width"><?= $v ?></div>
+                    </label>
+                <?php endforeach; ?>
+            </div>
+        </div>
+        <div class="uk-container uk-container-expand uk-margin-remove-left uk-margin-remove-right danhmucchitiet__fillter__section">
+            <div class="uk-section-xsmall" style="padding: 16px 0;">
+                <div class="uk-child-width-expand uk-grid uk-grid-8" uk-grid>
+                    <div>
+                        <button class="danhmucchitiet__fillter__btn danhmucchitiet__fillter__btn--submit uk-button uk-width uk-border-pill fz-16px be-vietnam-pro-600">Chọn</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    const element = document.querySelector(".danhmucchitiet__offcanvas");
+    // UIkit.offcanvas(element).show();
+</script>
+
 <?php require "template-parts/layouts/footer.php"; ?>
