@@ -1,0 +1,22 @@
+.thanhtoanlandau{
+  &__formHoadon{
+    display: none;
+    .thanhtoanlandau__checkbox:checked ~ &{
+      display: block;
+    }
+  }
+  &__checkbox{
+    $x:20px;
+    width: #{$x};
+    height: #{$x};
+    &:focus{
+      border-color: #2BA117;
+    }
+    &:checked{
+      background-color: #2BA117 !important;
+      &:focus{
+
+      }
+    }
+  }
+}
