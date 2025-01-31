@@ -238,7 +238,7 @@
             </svg>
         </div>
         <h2 class="uk-modal-title uk-margin-remove-bottom item-28px fz-20px be-vietnam-pro-600 lh-120 text-181C32">Thanh toán thành công</h2>
-        <div class="fz-14px lh-142 text-4B5563 item-4px">Hệ thống sẽ gửi lại email xác nhận trong thời gian sớm. Nếu có trục trặc, vui lòng liên hệ tới tổng đài để được hỗ trợ.</div>
+        <div class="fz-14px lh-142 text-4B5563 item-4px">Đơn hàng của bạn đã được thanh toán, cảm ơn bạn đã mua sắm tại đây.</div>
         <div class="item-24px">
             <button class="danhmucchitiet__fillter__btn item-28px danhmucchitiet__fillter__btn--submit uk-button uk-width uk-border-pill fz-16px be-vietnam-pro-600 uk-flex uk-flex-center uk-flex-middle gap-4">
                 Về trang chủ
