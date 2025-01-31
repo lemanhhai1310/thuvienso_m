@@ -1,4 +1,4 @@
-<?php $data["title"] = "Thanh toán chuyển khoản/success"; ?>
+<?php $data["title"] = "Thanh toán bằng ví/đủ số dư"; ?>
 <?php $bodyClass = '' ?>
 <?php $isNav = false ?>
 <?php $isHeader = false ?>
