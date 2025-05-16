@@ -4,8 +4,40 @@
 <?php $isHeader = true ?>
 <?php $isHome = true ?>
 <?php require "template-parts/layouts/header.php"; ?>
+    <div class="uk-section-xsmall bg-EFE7CA">
+        <div class="uk-container">
+            <form class="uk-search uk-search-default uk-width">
+                <input class="uk-search-input uk-border-pill home__search__box" type="search" placeholder="Search" aria-label="Search">
+                <button class="uk-search-icon-flip" uk-search-icon></button>
+            </form>
+        </div>
+    </div>
     <div class="uk-container item-24px">
-        <div class="home__slider__box uk-text-center rounded-20px">
+        <div uk-slideshow="animation: push;min-height: 543; max-height: 600;">
+
+            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+
+                <div class="uk-slideshow-items">
+                    <div>
+                        <img class="rounded-20px" src="images/photo.jpg" alt="" uk-cover>
+                    </div>
+                    <div>
+                        <img class="rounded-20px" src="images/dark.jpg" alt="" uk-cover>
+                    </div>
+                    <div>
+                        <img class="rounded-20px" src="images/light.jpg" alt="" uk-cover>
+                    </div>
+                </div>
+
+                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous uk-slideshow-item="previous"></a>
+                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next uk-slideshow-item="next"></a>
+
+            </div>
+
+            <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin"></ul>
+
+        </div>
+        <div class="home__slider__box uk-text-center rounded-20px" hidden="">
             <div class="uk-text-center">
                 <img data-src="images/image1.png" uk-img alt="">
                 <div class="item-30px fz-16px lh-125 be-vietnam-pro-600 text-FFF">DEAL HOT CỦA THÁNG</div>

@@ -1,4 +1,9 @@
 .home{
+  &__search{
+    &__box{
+      background-color: #fff !important;
+    }
+  }
   &__slider{
     &__box{
       display: flex;
