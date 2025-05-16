@@ -4,7 +4,7 @@
 <?php $isHeader = true ?>
 <?php $isHome = true ?>
 <?php require "template-parts/layouts/header.php"; ?>
-    <div class="uk-section-xsmall bg-EFE7CA">
+    <div class="uk-section-xsmall bg-37449d">
         <div class="uk-container">
             <form class="uk-search uk-search-default uk-width">
                 <input class="uk-search-input uk-border-pill home__search__box" type="search" placeholder="Search" aria-label="Search">

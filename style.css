@@ -1,3 +1,7 @@
+:root {
+  --brand-color: linear-gradient(277deg, #005b9c 0%, #3243ac 135.52%);
+}
+
 .be-vietnam-pro-100 {
   font-family: "Be Vietnam Pro", sans-serif;
   font-weight: 100;
@@ -580,6 +584,24 @@
   margin-top: 28px;
 }
 
+.pagination {
+  gap: 10px;
+}
+.pagination > * > * {
+  color: #000;
+  border-radius: 50%;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.pagination > *:hover > *, .pagination > *.uk-active > * {
+  color: #fff;
+  background: var(--brand-color);
+}
+
 .fz-10px, .header__navbar__icon--cart[data-count]:before {
   font-size: 10px;
 }
@@ -588,7 +610,7 @@
   font-size: 11px;
 }
 
-.fz-12px, .danhgia__tab > li > a, .tacgia-detail__table tr > *, .tacgia-detail__tabItem, .lichsunaptien__tab > li > a, .lichsumuahang__btn {
+.fz-12px, .danhgia__tab > li > a, .tacgia-detail__table tr > *, .tacgia-detail__tabItem, .lichsunaptien__tab > li > a, .lichsumuahang__btn, .pagination > * > * {
   font-size: 12px;
 }
 
@@ -1165,6 +1187,10 @@
   background: #DFDFDF;
 }
 
+.bg-37449d {
+  background: #37449d;
+}
+
 .mh-38 {
   min-height: 38px !important;
 }
@@ -1478,7 +1504,7 @@
   border-radius: 50%;
 }
 .footer__nav__li:is(.uk-active) .footer__nav__bg {
-  background: var(--brand-color, linear-gradient(284deg, #FFC01F -30.8%, #FFF38C 155.96%));
+  background: var(--brand-color, linear-gradient(277deg, #005b9c 0%, #3243ac 135.52%));
 }
 .footer__nav__icon {
   display: inline-flex;
